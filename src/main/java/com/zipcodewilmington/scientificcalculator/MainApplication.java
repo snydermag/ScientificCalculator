@@ -158,6 +158,7 @@ public class MainApplication {
                             inputB = Console.getDoubleInput("Input second number:");
                             currVal = Function.getPythagoreanTheorem(inputA, inputB);
                             break;
+                            // User selects factorial
                         case "C":
                             break;
                     }

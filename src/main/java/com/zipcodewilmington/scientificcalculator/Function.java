@@ -2,7 +2,7 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class Function {
 
-    // Arithmetic Functions
+//Arithmetic Functions
     public static double getSum (double inputA , double inputB) {
         double result = 0;
 
@@ -36,7 +36,8 @@ public class Function {
         return  result;
     }
 
-    // Exponential Functions
+//    Exponential Functions
+
     public static double getSquareRoot(double inputA) {
         double result;
 
@@ -72,7 +73,7 @@ public class Function {
         return result;
     }
 
-    // Trigonometry Functions
+//    Trigonometry Functions
 
     public static double getSine(double inputA) {
         double result;
@@ -123,7 +124,7 @@ public class Function {
         return result;
     }
 
-    // Special Functions
+//     Special Functions
 
     public static double getAbsValue(double inputA) {
         double result;
@@ -169,6 +170,18 @@ public class Function {
     public static void printSpecialFunctionsMenu () {
         System.out.format("A - Absolute Value\n");
         System.out.format("B - Pythagorean Theorem\n");
+    }
+
+    public static double getfactorial (double inputA) {
+        int i, result = 1;
+        double number = inputA;
+        for (i = 1; i <= number; i++) {
+            result = result * i;
+        }
+
+        return result;
+
+
     }
 
 }

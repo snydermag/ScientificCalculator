@@ -156,7 +156,7 @@ public class Function {
 
     public static double getNegate(double inputA) {
         double result;
-        result = (-1) * result ;
+        result = (-1) * inputA ;
         return result;
     }
 
@@ -195,10 +195,10 @@ public class Function {
 
 
     public static  void printTrigonometryMenu () {
-        System.out.format("A - Sin \n");
+        System.out.format("A - Sine \n");
         System.out.format("B - Cosine\n");
         System.out.format("C - Tangent\n");
-        System.out.format("D - Inverse Sin\n");
+        System.out.format("D - Inverse Sine\n");
         System.out.format("E - Inverse Cosine\n");
         System.out.format("F - Inverse Tangent\n");
     }

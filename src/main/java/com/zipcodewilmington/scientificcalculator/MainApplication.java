@@ -43,13 +43,20 @@ public class MainApplication {
                 case "A":
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
-                        case "A":
 
+                        // User Selects Addition - Will add two numbers to be inputted by User
+                        case "A":
+                            inputA = Console.getDoubleInput("Input first number:");
+                            inputB = Console.getDoubleInput("Input second number:");
+                            currVal = Function.getSum(inputA, inputB);
                             break;
+                        // User Selects Subtraction - Will subtract two numbers to be inputted by User
                         case "B":
                             break;
+                        // User Selects Multiply - Will multiply two numbers to be inputted by User
                         case "C":
                             break;
+                        // User Selects Divide - Will divide two numbers to be inputted by User
                         case "D":
                             break;
                     }

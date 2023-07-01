@@ -139,7 +139,7 @@ public class Function {
 
     }
 
-    public static void printAresmeticMenu() {
+    public static void printArithmeticMenu() {
         System.out.format("A - Addition\n" );
         System.out.format("B - Subtraction\n");
         System.out.format("C - Multiplication\n");
@@ -172,7 +172,7 @@ public class Function {
         System.out.format("B - Pythagorean Theorem\n");
     }
 
-    public static double getfactorial (double inputA) {
+    public static double getFactorial (double inputA) {
         int i, result = 1;
         double number = inputA;
         for (i = 1; i <= number; i++) {

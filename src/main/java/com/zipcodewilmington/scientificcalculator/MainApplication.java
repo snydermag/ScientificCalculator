@@ -14,4 +14,8 @@ public class MainApplication {
         Console.println("The user input %s as a integer", i);
         Console.println("The user input %s as a d", d);
     }
+    public static void printMenu() {
+        Console.println("Main Menu");
+
+    }
 }

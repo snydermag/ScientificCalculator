@@ -156,7 +156,7 @@ public class Function {
 
     public static double getNegate(double inputA) {
         double result;
-        result = (-1) * result ;
+        result = (-1) * inputA ;
         return result;
     }
 

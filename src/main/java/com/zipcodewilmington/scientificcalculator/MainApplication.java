@@ -38,7 +38,7 @@ public class MainApplication {
                 // User selects Arithmetic - Will take User to Arithmetic Menu
                 case "A":
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
-                    switch (menuSelection){
+                    switch (menuSelection) {
                         case "A":
                             break;
                         case "B":
@@ -53,7 +53,7 @@ public class MainApplication {
                 // User selects Exponential - Will take User to Exponential Menu
                 case "E":
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
-                    switch (menuSelection){
+                    switch (menuSelection) {
                         case "A":
                             break;
                         case "B":
@@ -79,15 +79,38 @@ public class MainApplication {
                             break;
                         case "E":
                             break;
+                        case "F":
+                            break;
                     }
                     break;
 
                 // User selects Logarithmic - Will take User to Logarithmic Menu
                 case "L":
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
+                    switch (menuSelection) {
+                        case "A":
+                            break;
+                        case "B":
+                            break;
+                        case "C":
+                            break;
+                        case "D":
+                            break;
+                    }
+
                     break;
 
                 // User selects Special - Will take User to Special Functions Menu
                 case "S":
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
+                    switch (menuSelection) {
+                        case "A":
+                            break;
+                        case "B":
+                            break;
+                        case "C":
+                            break;
+                    }
                     break;
 
                 // User selects Quit - Will exit the program

@@ -112,6 +112,13 @@ public class Function {
     }
 
     // Logarithmic Functions
+
+    public static double getLog (double inputA, double inputB){
+        double x = inputA;
+        double base = inputB;
+        double result = Math.log(x) / Math.log(base);
+        return result;
+    }
     public static double getLN (double inputA) {
 
         double result = Math.log(inputA);

@@ -135,6 +135,14 @@ public class TestFunction {
         double expected = 120;
         Assert.assertEquals(actual,expected,0.001);
     }
+
+    @Test
+    public void testGetNegate () {
+        double actual = Function.getNegate(8.5);
+        double expected = -8.5;
+        Assert.assertEquals(actual,expected,0.001);
+    }
+
 }
 
 

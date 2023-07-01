@@ -208,17 +208,18 @@ public class MainApplication {
 
     }
     public static void printMainMenu(Double currVal) {
-        System.out.format("%f", currVal);
-        System.out.format("Main Menu\n");
-        System.out.format("%s | %s | %s","C - Clear", "I - +/-", "M - M+\n");
-        System.out.format("______");
-        System.out.format("A - Arithmetic");
-        System.out.format("E - Exponential");
-        System.out.format("T - Trigonometry");
-        System.out.format("L - Logarithmic");
-        System.out.format("S - Special");
-        System.out.format("Q - Quit");
-
+        System.out.format("______________________________________\n");
+        System.out.format("%f\n", currVal);
+        System.out.format("______________________________________\n");
+        System.out.format("%s   |   %s   |   %s","C - Clear", "I - +/-", "M - M+\n");
+        System.out.format("______________________________________\n");
+        System.out.format("A - Arithmetic Functions\n");
+        System.out.format("E - Exponential Functions\n");
+        System.out.format("T - Trigonometry Functions\n");
+        System.out.format("L - Logarithmic  Functions\n");
+        System.out.format("S - Special Functions\n");
+        System.out.format("Q - Quit\n");
+        System.out.format("______________________________________\n");
     }
 
 

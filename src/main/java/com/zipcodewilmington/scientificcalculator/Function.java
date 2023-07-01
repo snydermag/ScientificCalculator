@@ -146,9 +146,10 @@ public class Function {
     }
 
     public static double getFactorial (int inputA) {
-        int i, result = 1;
-        int number = inputA;
-        for (i = 1; i <= number; i++) {
+        int i = 1;
+        double result = 1;
+
+        for (i = 1; i <= inputA; i++) {
             result = result * i;
         }
         return result;
@@ -174,7 +175,7 @@ public class Function {
     public static double recallMemory(double memoryStored) {
         double storedVal = memoryStored;
         return storedVal;
-
+    }
 
 
     //Print Functions
@@ -184,9 +185,10 @@ public class Function {
         System.out.format("B - Subtraction\n");
         System.out.format("C - Multiplication\n");
         System.out.format("D - Division\n");
+
     }
 
-    public static void  printExponentialMenu () {
+    public static void  printExponentialMenu() {
         System.out.format("A - Square Root\n");
         System.out.format("B - Square\n");
         System.out.format("C - Exponent\n");
@@ -194,7 +196,7 @@ public class Function {
     }
 
 
-    public static  void printTrigonometryMenu () {
+    public static void printTrigonometryMenu() {
         System.out.format("A - Sine \n");
         System.out.format("B - Cosine\n");
         System.out.format("C - Tangent\n");
@@ -203,12 +205,12 @@ public class Function {
         System.out.format("F - Inverse Tangent\n");
     }
 
-    public static void printLogarithmicMenu () {
+    public static void printLogarithmicMenu() {
         System.out.format("A - LN\n");
         System.out.format("B - Log10\n");
     }
 
-    public static void printSpecialFunctionsMenu () {
+    public static void printSpecialFunctionsMenu() {
         System.out.format("A - Absolute Value\n");
         System.out.format("B - Pythagorean Theorem\n");
         System.out.format("C - Factorial\n");

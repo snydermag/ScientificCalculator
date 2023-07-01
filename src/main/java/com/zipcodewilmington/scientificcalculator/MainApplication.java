@@ -21,7 +21,7 @@ public class MainApplication {
 //        Console.println("The user input %s as an integer", i);
 //        Console.println("The user input %s as a d", d);
         while (inMenu) {
-            printMainMenu();
+            printMainMenu(currVal);
 
             String menuSelection = Console.getStringInput("Press Key to select Menu option");
 
@@ -127,6 +127,7 @@ public class MainApplication {
 
                 // User selects Special - Will take User to Special Functions Menu
                 case "S":
+
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
                         // User selects Absolute Value - Will return the Absolute Value of number inputted by User
@@ -138,7 +139,7 @@ public class MainApplication {
                         case "B":
                             inputA = Console.getDoubleInput("Input first number:");
                             inputB = Console.getDoubleInput("Input second number:");
-                            currVal = Function.pythagoreanTheorem(inputA, inputB);
+                            currVal = Function.getPythagoreanTheorem(inputA, inputB);
                             break;
                         case "C":
                             break;
@@ -162,9 +163,10 @@ public class MainApplication {
 
 
     }
-    public static void printMainMenu() {
+    public static void printMainMenu(Double currVal) {
+        System.out.format("%f", currVal);
         System.out.format("Main Menu\n");
-        System.out.format("%s %s %s","C - Clear", "I - +/-", "M - M+\n");
+        System.out.format("%s | %s | %s","C - Clear", "I - +/-", "M - M+\n");
         System.out.format("______");
         System.out.format("A - Arithmetic");
         System.out.format("E - Exponential");

@@ -10,7 +10,6 @@ public class MainApplication {
         double storedVal = 0;
         double inputA;
         double inputB;
-        double inputC;
 
 
 //        Console.println("Welcome to my calculator!");
@@ -44,19 +43,19 @@ public class MainApplication {
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
-                        // User Selects Addition - Will add two numbers to be inputted by User
+                        // User selects Addition - Will add two numbers to be inputted by User
                         case "A":
                             inputA = Console.getDoubleInput("Input first number:");
                             inputB = Console.getDoubleInput("Input second number:");
                             currVal = Function.getSum(inputA, inputB);
                             break;
-                        // User Selects Subtraction - Will subtract two numbers to be inputted by User
+                        // User selects Subtraction - Will subtract two numbers to be inputted by User
                         case "B":
                             break;
-                        // User Selects Multiply - Will multiply two numbers to be inputted by User
+                        // User selects Multiply - Will multiply two numbers to be inputted by User
                         case "C":
                             break;
-                        // User Selects Divide - Will divide two numbers to be inputted by User
+                        // User selects Divide - Will divide two numbers to be inputted by User
                         case "D":
                             break;
                     }
@@ -66,12 +65,17 @@ public class MainApplication {
                 case "E":
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
+                        // User selects Square Root - Will find the square root of number to be inputted by User
                         case "A":
                             break;
+                        // User selects Square - Will square number to be inputted by User
                         case "B":
                             break;
+                        // User selects Exponent - Will find the value of number to the power of another number
+                        // (both inputted by User)
                         case "C":
                             break;
+                        // User selects Inverse - Will find the value of 1 divided by number inputted by User
                         case "D":
                             break;
                     }
@@ -81,16 +85,22 @@ public class MainApplication {
                 case "T":
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection){
+                        // User selects Sin - Will find Sine of number inputted by User
                         case "A":
                             break;
+                        // User selects Cosine - Will find Cosine of number inputted by User
                         case "B":
                             break;
+                        // User selects Tangent - Will find Tangent of number inputted by User
                         case "C":
                             break;
+                        // User selects Inverse Sine - Will find Cosecant of number inputted by User
                         case "D":
                             break;
+                        // User selects Inverse Cosine - Will find Secant of number inputted by User
                         case "E":
                             break;
+                        // User selects Inverse Tangent - Will find Cotangent of number inputted by User
                         case "F":
                             break;
                     }
@@ -100,25 +110,35 @@ public class MainApplication {
                 case "L":
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
+                        // User selects
                         case "A":
                             break;
+                        // User selects
                         case "B":
                             break;
+                        // User selects
                         case "C":
                             break;
+                        // User selects
                         case "D":
                             break;
                     }
-
                     break;
 
                 // User selects Special - Will take User to Special Functions Menu
                 case "S":
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
+                        // User selects Absolute Value - Will return the Absolute Value of number inputted by User
                         case "A":
+                            inputA = Console.getDoubleInput("Input number:");
+                            currVal = Function.getAbsValue(inputA);
                             break;
+                        // User selects Pythagorean Theorem
                         case "B":
+                            inputA = Console.getDoubleInput("Input first number:");
+                            inputB = Console.getDoubleInput("Input second number:");
+                            currVal = Function.pythagoreanTheorem(inputA, inputB);
                             break;
                         case "C":
                             break;

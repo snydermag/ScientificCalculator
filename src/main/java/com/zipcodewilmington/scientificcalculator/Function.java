@@ -154,7 +154,7 @@ public class Function {
         return result;
     }
 
-    public static void printAresmeticMenu() {
+    public static void printArithmeticMenu() {
         System.out.format("A - Addition\n" );
         System.out.format("B - Subtraction\n");
         System.out.format("C - Multiplication\n");
@@ -165,7 +165,7 @@ public class Function {
         System.out.format("A - Square Root\n");
         System.out.format("B - Square\n");
         System.out.format("C - Exponent\n");
-        System.out.format("D - Inverse\n"); // ????
+        System.out.format("D - Inverse\n");
     }
 
 

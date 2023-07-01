@@ -2,9 +2,6 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class Special {
 
-    public static void main(String[] args) {
-    }
-
 
     public static double getAbsValue(double inputA) {
         double result;

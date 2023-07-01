@@ -34,20 +34,34 @@ public class MainApplication {
                 // User selects M+ - Will store the value for later use
                 case "M":
                     break;
+
+                // User selects Arithmetic - Will take User to Arithmetic Menu
                 case "A":
                     break;
+
+                // User selects Exponential - Will take User to Exponential Menu
                 case "E":
                     break;
+
+                // User selects Trigonometry - Will take User to Trigonometry Menu
                 case "T":
                     break;
+
+                // User selects Logarithmic - Will take User to Logarithmic Menu
                 case "L":
                     break;
+
+                // User selects Special - Will take User to Special Functions Menu
                 case "S":
                     break;
+
+                // User selects Quit - Will exit the program
                 case "Q":
                     break;
+
+                // User enters an invalid Menu option - Will prompt the User to enter another selection
                 default:
-                    System.out.println("Invalid input");
+                    System.out.println("Invalid input. Please try again.");
                     break;
             }
 

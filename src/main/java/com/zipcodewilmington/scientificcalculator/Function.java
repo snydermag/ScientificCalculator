@@ -136,7 +136,39 @@ public class Function {
         result = Math.sqrt((inputA * inputA) + (inputB * inputB));
         return result;
 
+    }
 
+    public static void printAresmeticMenu() {
+        System.out.format("A - Addition\n" );
+        System.out.format("B - Subtraction\n");
+        System.out.format("C - Multiplication\n");
+        System.out.format("D - Division\n");
+    }
+
+    public static void  printExponentialMenu () {
+        System.out.format("A - Square Root\n");
+        System.out.format("B - Exponent\n");
+        System.out.format("C - Inverse\n"); // ????
+    }
+
+
+    public static  void printTrigonometryMenu () {
+        System.out.format("A - Sin \n");
+        System.out.format("B - Cosine\n");
+        System.out.format("C - Tangent\n");
+        System.out.format("D - Inverse Sin\n");
+        System.out.format("E - Inverse Cosine\n");
+        System.out.format("F - Inverse Tangent\n");
+    }
+
+    public static void printLogarithmicMenu () {
+        System.out.format("A - LN\n");
+        System.out.format("B - Log10\n");
+    }
+
+    public static void printSpecialFunctionsMenu () {
+        System.out.format("A - Absolute Value\n");
+        System.out.format("B - Pythagorean Theorem\n");
     }
 
 }

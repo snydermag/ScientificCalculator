@@ -51,12 +51,21 @@ public class MainApplication {
                             break;
                         // User selects Subtraction - Will subtract two numbers to be inputted by User
                         case "B":
+                            inputA = Console.getDoubleInput("Input first number:");
+                            inputB = Console.getDoubleInput("Input second number:");
+                            currVal = Function.getSubtract(inputA, inputB);
                             break;
                         // User selects Multiply - Will multiply two numbers to be inputted by User
                         case "C":
+                            inputA = Console.getDoubleInput("Input first number:");
+                            inputB = Console.getDoubleInput("Input second number:");
+                            currVal = Function.getMultiply(inputA, inputB);
                             break;
                         // User selects Divide - Will divide two numbers to be inputted by User
                         case "D":
+                            inputA = Console.getDoubleInput("Input first number:");
+                            inputB = Console.getDoubleInput("Input second number:");
+                            currVal = Function.getDivide(inputA, inputB);
                             break;
                     }
                     break;
@@ -67,16 +76,25 @@ public class MainApplication {
                     switch (menuSelection) {
                         // User selects Square Root - Will find the square root of number to be inputted by User
                         case "A":
+                            inputA = Console.getDoubleInput("Input number:");
+                            currVal = Function.getSquareRoot(inputA);
                             break;
                         // User selects Square - Will square number to be inputted by User
                         case "B":
+                            inputA = Console.getDoubleInput("Input number:");
+                            currVal = Function.getSquare(inputA);
                             break;
                         // User selects Exponent - Will find the value of number to the power of another number
                         // (both inputted by User)
                         case "C":
+                            inputA = Console.getDoubleInput("Input first number:");
+                            inputB = Console.getDoubleInput("Input second number:");
+                            currVal = Function.getExponent(inputA, inputB);
                             break;
                         // User selects Inverse - Will find the value of 1 divided by number inputted by User
                         case "D":
+                            inputA = Console.getDoubleInput("Input number:");
+                            currVal = Function.getInverse(inputA);
                             break;
                     }
                     break;
@@ -141,6 +159,7 @@ public class MainApplication {
                             inputB = Console.getDoubleInput("Input second number:");
                             currVal = Function.getPythagoreanTheorem(inputA, inputB);
                             break;
+                            // User selects factorial
                         case "C":
                             break;
                     }

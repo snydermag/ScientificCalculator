@@ -132,15 +132,15 @@ public class Function {
         return result;
     }
 
-    public static double pythagoreanTheorem (double inputA, double inputB) {
+    public static double getPythagoreanTheorem (double inputA, double inputB) {
         double result;
         result = Math.sqrt((inputA * inputA) + (inputB * inputB));
         return result;
     }
 
-    public static double getFactorial (double inputA) {
+    public static double getFactorial (int inputA) {
         int i, result = 1;
-        double number = inputA;
+        int number = inputA;
         for (i = 1; i <= number; i++) {
             result = result * i;
         }

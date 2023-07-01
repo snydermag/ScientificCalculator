@@ -28,13 +28,16 @@ public class MainApplication {
     public static void printMainMenu() {
         System.out.format("Main Menu");
         System.out.format("*Press key to select Menu Option*");
-        System.out.format("C - Clear");
-        System.out.format("M - M+");
+        System.out.format("%s %s %s","C - Clear", "I - +/-", "M - M+");
         System.out.format("______");
         System.out.format("A - Arithmetic");
-
-
-
+        System.out.format("E - Exponential");
+        System.out.format("T - Trigonometry");
+        System.out.format("L - Logarithmic");
+        System.out.format("S - Special");
+        System.out.format("Q - Quit");
 
     }
+
+
 }

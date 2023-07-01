@@ -43,10 +43,10 @@ public class MainApplication {
                 // User selects Arithmetic - Will take User to Arithmetic Menu
                 case "A":
 
-                    // Print Arithmetic Menu
                     Function.printArithmeticMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
 
+                    // Switch case for Menu Selection
                     switch (menuSelection) {
 
                         // User selects Addition - Will add two numbers to be inputted by User
@@ -78,9 +78,13 @@ public class MainApplication {
 
                 // User selects Exponential - Will take User to Exponential Menu
                 case "E":
+
                     Function.printExponentialMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
+
+                    // Switch case for Menu Selection
                     switch (menuSelection) {
+
                         // User selects Square Root - Will find the square root of number to be inputted by User
                         case "A":
                             inputA = Console.getDoubleInput("Input number:");
@@ -108,9 +112,13 @@ public class MainApplication {
 
                 // User selects Trigonometry - Will take User to Trigonometry Menu
                 case "T":
+
                     Function.printTrigonometryMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
+
+                    // Switch case for Menu Selection
                     switch (menuSelection){
+
                         // User selects Sin - Will find Sine of number inputted by User
                         case "A":
                             break;
@@ -134,9 +142,13 @@ public class MainApplication {
 
                 // User selects Logarithmic - Will take User to Logarithmic Menu
                 case "L":
+
                     Function.printLogarithmicMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
+
+                    // Switch case for Menu Selection
                     switch (menuSelection) {
+
                         // User selects
                         case "A":
                             break;
@@ -154,9 +166,13 @@ public class MainApplication {
 
                 // User selects Special - Will take User to Special Functions Menu
                 case "S":
+
                     Function.printSpecialFunctionsMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
+
+                    // Switch case for Menu Selection
                     switch (menuSelection) {
+
                         // User selects Absolute Value - Will return the Absolute Value of number inputted by User
                         case "A":
                             inputA = Console.getDoubleInput("Input number:");

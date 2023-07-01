@@ -160,6 +160,23 @@ public class Function {
         return result;
     }
 
+//    Memory Functions
+    public static double addMemory(double memoryStored) {
+        double storedVal = memoryStored;
+        return storedVal;
+
+    }
+    public static double clearMemory() {
+        return 0;
+    }
+
+
+    public static double recallMemory(double memoryStored) {
+        double storedVal = memoryStored;
+        return storedVal;
+
+
+
     //Print Functions
 
     public static void printArithmeticMenu() {

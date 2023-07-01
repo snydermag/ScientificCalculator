@@ -105,33 +105,21 @@ public class MainApplication {
                     switch (menuSelection){
                         // User selects Sin - Will find Sine of number inputted by User
                         case "A":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            currVal = Function.getSine(inputA);
                             break;
                         // User selects Cosine - Will find Cosine of number inputted by User
                         case "B":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            currVal = Function.getCosine(inputA);
                             break;
                         // User selects Tangent - Will find Tangent of number inputted by User
                         case "C":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            currVal = Function.getTangent(inputA);
                             break;
                         // User selects Inverse Sine - Will find Cosecant of number inputted by User
                         case "D":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            currVal = Function.getInverseSine(inputA);
                             break;
                         // User selects Inverse Cosine - Will find Secant of number inputted by User
                         case "E":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            currVal = Function.getInverseCosine(inputA);
                             break;
                         // User selects Inverse Tangent - Will find Cotangent of number inputted by User
                         case "F":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            currVal = Function.getInverseTan(inputA);
                             break;
                     }
                     break;
@@ -140,27 +128,17 @@ public class MainApplication {
                 case "L":
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
-
-                        // User selects Log - Will find Log of number inputted by User
+                        // User selects
                         case "A":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            inputB = Console.getDoubleInput("Input second number:");
-                            currVal = Function.getLog(inputA,inputB);
                             break;
-                        // User selects LN
+                        // User selects
                         case "B":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            currVal = Function.getLN(inputA);
                             break;
-                        // User selects Log10
+                        // User selects
                         case "C":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            currVal = Function.getLog10(inputA);
                             break;
-                        // User selects get Absolute Value
+                        // User selects
                         case "D":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            currVal = Function.getAbsValue(inputA);
                             break;
                     }
                     break;

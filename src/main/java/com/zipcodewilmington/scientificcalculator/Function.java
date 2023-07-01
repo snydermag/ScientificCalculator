@@ -131,7 +131,7 @@ public class Function {
         return result;
     }
 
-//     Special Functions
+    // Special Functions
 
     public static double getAbsValue(double inputA) {
         double result;
@@ -146,9 +146,10 @@ public class Function {
     }
 
     public static double getFactorial (int inputA) {
-        int i, result = 1;
-        int number = inputA;
-        for (i = 1; i <= number; i++) {
+        int i = 1;
+        double result = 1;
+
+        for (i = 1; i <= inputA; i++) {
             result = result * i;
         }
         return result;
@@ -160,7 +161,7 @@ public class Function {
         return result;
     }
 
-//    Memory Functions
+    // Memory Functions
     public static double addMemory(double memoryStored) {
         double storedVal = memoryStored;
         return storedVal;
@@ -177,8 +178,7 @@ public class Function {
     }
 
 
-
-    //Print Functions
+    // Print Functions
 
     public static void printArithmeticMenu() {
         System.out.format("A - Addition\n" );
@@ -187,7 +187,7 @@ public class Function {
         System.out.format("D - Division\n");
     }
 
-    public static void  printExponentialMenu () {
+    public static void  printExponentialMenu() {
         System.out.format("A - Square Root\n");
         System.out.format("B - Square\n");
         System.out.format("C - Exponent\n");
@@ -195,7 +195,7 @@ public class Function {
     }
 
 
-    public static  void printTrigonometryMenu () {
+    public static void printTrigonometryMenu() {
         System.out.format("A - Sine \n");
         System.out.format("B - Cosine\n");
         System.out.format("C - Tangent\n");
@@ -204,12 +204,12 @@ public class Function {
         System.out.format("F - Inverse Tangent\n");
     }
 
-    public static void printLogarithmicMenu () {
+    public static void printLogarithmicMenu() {
         System.out.format("A - LN\n");
         System.out.format("B - Log10\n");
     }
 
-    public static void printSpecialFunctionsMenu () {
+    public static void printSpecialFunctionsMenu() {
         System.out.format("A - Absolute Value\n");
         System.out.format("B - Pythagorean Theorem\n");
         System.out.format("C - Factorial\n");

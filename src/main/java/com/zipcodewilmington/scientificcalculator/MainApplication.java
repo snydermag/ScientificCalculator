@@ -40,6 +40,7 @@ public class MainApplication {
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
                         case "A":
+
                             break;
                         case "B":
                             break;

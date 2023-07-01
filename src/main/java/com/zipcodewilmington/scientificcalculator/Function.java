@@ -154,6 +154,14 @@ public class Function {
         return result;
     }
 
+    public static double getNegate(double inputA) {
+        double result;
+        result = (-1) * result ;
+        return result;
+    }
+
+    //Print Functions
+
     public static void printArithmeticMenu() {
         System.out.format("A - Addition\n" );
         System.out.format("B - Subtraction\n");

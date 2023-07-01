@@ -112,6 +112,13 @@ public class Function {
     }
 
     // Logarithmic Functions
+
+    public static double getLog (double inputA, double inputB){
+        double x = inputA;
+        double base = inputB;
+        double result = Math.log(x) / Math.log(base);
+        return result;
+    }
     public static double getLN (double inputA) {
 
         double result = Math.log(inputA);
@@ -147,6 +154,31 @@ public class Function {
         return result;
     }
 
+    public static double getNegate(double inputA) {
+        double result;
+        result = (-1) * inputA ;
+        return result;
+    }
+
+//    Memory Functions
+    public static double addMemory(double memoryStored) {
+        double storedVal = memoryStored;
+        return storedVal;
+
+    }
+    public static double clearMemory() {
+        return 0;
+    }
+
+
+    public static double recallMemory(double memoryStored) {
+        double storedVal = memoryStored;
+        return storedVal;
+
+
+
+    //Print Functions
+
     public static void printArithmeticMenu() {
         System.out.format("A - Addition\n" );
         System.out.format("B - Subtraction\n");
@@ -163,10 +195,10 @@ public class Function {
 
 
     public static  void printTrigonometryMenu () {
-        System.out.format("A - Sin \n");
+        System.out.format("A - Sine \n");
         System.out.format("B - Cosine\n");
         System.out.format("C - Tangent\n");
-        System.out.format("D - Inverse Sin\n");
+        System.out.format("D - Inverse Sine\n");
         System.out.format("E - Inverse Cosine\n");
         System.out.format("F - Inverse Tangent\n");
     }

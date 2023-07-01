@@ -8,6 +8,10 @@ public class MainApplication {
         boolean inMenu = true;
         double currVal = 0;
         double storedVal = 0;
+        double inputA;
+        double inputB;
+        double inputC;
+
 
 //        Console.println("Welcome to my calculator!");
 //        String s = Console.getStringInput("Enter a string");
@@ -15,7 +19,7 @@ public class MainApplication {
 //        Double d = Console.getDoubleInput("Enter a double.");
 //
 //        Console.println("The user input %s as a string", s);
-//        Console.println("The user input %s as a integer", i);
+//        Console.println("The user input %s as an integer", i);
 //        Console.println("The user input %s as a d", d);
         while (inMenu) {
             printMainMenu();
@@ -31,7 +35,7 @@ public class MainApplication {
                 case "I":
                     break;
 
-                // User selects M+ - Will store the value for later use
+                // User selects Memory - Will take User to Memory Menu
                 case "M":
                     break;
 
@@ -40,6 +44,7 @@ public class MainApplication {
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection){
                         case "A":
+
                             break;
                         case "B":
                             break;
@@ -92,6 +97,7 @@ public class MainApplication {
 
                 // User selects Quit - Will exit the program
                 case "Q":
+                    inMenu = false;
                     break;
 
                 // User enters an invalid Menu option - Will prompt the User to enter another selection
@@ -100,11 +106,6 @@ public class MainApplication {
                     break;
             }
 
-
-
-
-
-            inMenu = false;
 
         }
 

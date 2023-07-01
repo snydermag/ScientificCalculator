@@ -131,7 +131,7 @@ public class Function {
         return result;
     }
 
-//     Special Functions
+    // Special Functions
 
     public static double getAbsValue(double inputA) {
         double result;
@@ -161,7 +161,7 @@ public class Function {
         return result;
     }
 
-//    Memory Functions
+    // Memory Functions
     public static double addMemory(double memoryStored) {
         double storedVal = memoryStored;
         return storedVal;
@@ -178,14 +178,13 @@ public class Function {
     }
 
 
-    //Print Functions
+    // Print Functions
 
     public static void printArithmeticMenu() {
         System.out.format("A - Addition\n" );
         System.out.format("B - Subtraction\n");
         System.out.format("C - Multiplication\n");
         System.out.format("D - Division\n");
-
     }
 
     public static void  printExponentialMenu() {

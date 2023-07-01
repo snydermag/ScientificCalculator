@@ -1,6 +1,6 @@
 package com.zipcodewilmington.scientificcalculator;
 
-public class Trigonometry extends Function {
+public class Trigonometry {
 
     public static void main(String[] args) {
     }

@@ -1,6 +1,6 @@
 package com.zipcodewilmington.scientificcalculator;
 
-public class Special extends Function {
+public class Special {
 
     public static void main(String[] args) {
     }

@@ -1,9 +1,7 @@
 package com.zipcodewilmington.scientificcalculator;
 
-public class Arithmetic extends Function {
-    public static void main(String[] args) {
+public class Arithmetic {
 
-    }
     public static double getSum (double inputA , double inputB) {
         double result = 0;
 

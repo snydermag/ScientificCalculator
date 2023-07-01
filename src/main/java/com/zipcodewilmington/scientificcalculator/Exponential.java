@@ -1,6 +1,6 @@
 package com.zipcodewilmington.scientificcalculator;
 
-public class Exponential extends Function {
+public class Exponential {
 
     public static void main(String[] args) {
 

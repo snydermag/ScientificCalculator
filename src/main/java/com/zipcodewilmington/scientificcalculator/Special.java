@@ -14,11 +14,9 @@ public class Special extends Function {
 
     public static double pythagoreanTheorem (double inputA, double inputB) {
         double result;
-        result = Math.get;
+        result = Math.sqrt((inputA * inputA) + (inputB * inputB));
         return result;
 
 
-
-
-
+    }
 }

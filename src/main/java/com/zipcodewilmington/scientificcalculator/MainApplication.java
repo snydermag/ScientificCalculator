@@ -93,7 +93,7 @@ public class MainApplication {
                             break;
                         // User selects Inverse - Will find the value of 1 divided by number inputted by User
                         case "D":
-                            inputA = Console.getDoubleInput("Input first number:");
+                            inputA = Console.getDoubleInput("Input number:");
                             currVal = Function.getInverse(inputA);
                             break;
                     }

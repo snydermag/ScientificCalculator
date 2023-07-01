@@ -18,6 +18,8 @@ public class MainApplication {
         while (inMenu) {
             printMainMenu();
 
+            inMenu = false;
+
         }
 
 

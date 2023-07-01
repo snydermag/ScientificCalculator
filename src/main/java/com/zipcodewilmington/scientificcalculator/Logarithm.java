@@ -1,8 +1,7 @@
 package com.zipcodewilmington.scientificcalculator;
 
 public class Logarithm {
-    public static void main(String[] args) {
-    }
+
     public static double getLN (double inputA) {
 
         double result = Math.log(inputA);

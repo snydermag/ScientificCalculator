@@ -2,6 +2,11 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class Exponential {
 
+    public static void printMenu() {
+
+
+    }
+
     public static double getSquareRoot(double inputA) {
         double result;
 

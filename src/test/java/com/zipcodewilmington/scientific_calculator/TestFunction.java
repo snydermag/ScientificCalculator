@@ -6,7 +6,7 @@ public class TestFunction {
 
 
     @Test
-    public void testGetSum(){
+    public void testGetSum (){
        double actual = Function.getSum(2,2);
        double expected = 4.0;
         Assert.assertEquals(actual,expected,0.1);

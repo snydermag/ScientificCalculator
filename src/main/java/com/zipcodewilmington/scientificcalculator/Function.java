@@ -174,6 +174,7 @@ public class Function {
     public static double recallMemory(double memoryStored) {
         double storedVal = memoryStored;
         return storedVal;
+    }
 
 
 

@@ -143,10 +143,18 @@ public class Function {
         double result;
         result = Math.sqrt((inputA * inputA) + (inputB * inputB));
         return result;
-
     }
 
-    public static void printArithmeticMenu() {
+    public static double getFactorial (double inputA) {
+        int i, result = 1;
+        double number = inputA;
+        for (i = 1; i <= number; i++) {
+            result = result * i;
+        }
+        return result;
+    }
+
+    public static void printAresmeticMenu() {
         System.out.format("A - Addition\n" );
         System.out.format("B - Subtraction\n");
         System.out.format("C - Multiplication\n");
@@ -155,8 +163,9 @@ public class Function {
 
     public static void  printExponentialMenu () {
         System.out.format("A - Square Root\n");
-        System.out.format("B - Exponent\n");
-        System.out.format("C - Inverse\n"); // ????
+        System.out.format("B - Square\n");
+        System.out.format("C - Exponent\n");
+        System.out.format("D - Inverse\n"); // ????
     }
 
 
@@ -177,18 +186,8 @@ public class Function {
     public static void printSpecialFunctionsMenu () {
         System.out.format("A - Absolute Value\n");
         System.out.format("B - Pythagorean Theorem\n");
+        System.out.format("C - Factorial\n");
     }
 
-    public static double getFactorial (double inputA) {
-        int i, result = 1;
-        double number = inputA;
-        for (i = 1; i <= number; i++) {
-            result = result * i;
-        }
-
-        return result;
-
-
-    }
 
 }

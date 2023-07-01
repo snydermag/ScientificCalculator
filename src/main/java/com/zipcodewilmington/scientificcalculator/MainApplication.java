@@ -76,12 +76,12 @@ public class MainApplication {
                     switch (menuSelection) {
                         // User selects Square Root - Will find the square root of number to be inputted by User
                         case "A":
-                            inputA = Console.getDoubleInput("Input first number:");
+                            inputA = Console.getDoubleInput("Input number:");
                             currVal = Function.getSquareRoot(inputA);
                             break;
                         // User selects Square - Will square number to be inputted by User
                         case "B":
-                            inputA = Console.getDoubleInput("Input first number:");
+                            inputA = Console.getDoubleInput("Input number:");
                             currVal = Function.getSquare(inputA);
                             break;
                         // User selects Exponent - Will find the value of number to the power of another number

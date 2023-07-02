@@ -61,6 +61,7 @@ public class MainApplication {
 
                 // User selects Arithmetic - Will take User to Arithmetic Menu
                 case "A":
+                    Function.printArithmeticMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
@@ -100,7 +101,7 @@ public class MainApplication {
 
                 // User selects Exponential - Will take User to Exponential Menu
                 case "E":
-
+                    Function.printExponentialMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
@@ -131,7 +132,7 @@ public class MainApplication {
 
                 // User selects Trigonometry - Will take User to Trigonometry Menu
                 case "T":
-
+                    Function.printTrigonometryMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection){
 
@@ -180,7 +181,7 @@ public class MainApplication {
 
                 // User selects Logarithmic - Will take User to Logarithmic Menu
                 case "L":
-
+                    Function.printLogarithmicMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
@@ -205,7 +206,7 @@ public class MainApplication {
 
                 // User selects Special - Will take User to Special Functions Menu
                 case "S":
-
+                    Function.printSpecialFunctionsMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
@@ -247,15 +248,14 @@ public class MainApplication {
 
     public static void printTopMenu(Double currVal) {
         System.out.format("|________________________Calculator________________________|\n");
-        System.out.format("%f\n", currVal);
+        System.out.format("%f\n",currVal);
         System.out.format("|__________________________________________________________|\n");
-        System.out.format("|  %s    |    %s   |    %s  |\n","[C] - Clear", "[I] - +/-", "[M] - Memory Menu");
-        System.out.format("|__________________________________________________________|\n");
-
     }
 
     public static void printMainMenu() {
-        System.out.format("|                        Main Menu                         |\n");
+        System.out.format("|  %s    |    %s   |    %s  |\n","[C] - Clear", "[I] - +/-", "[M] - Memory Menu");
+        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|                         Main Menu                        |\n");
         System.out.format("|__________________________________________________________|\n");
         System.out.format("  [A] - Arithmetic  \n");
         System.out.format("  [E] - Exponential  \n");

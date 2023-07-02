@@ -7,6 +7,7 @@ public class MainApplication {
     public static void main(String[] args) {
         boolean inMenu = true;
         double currVal = 0;
+        boolean isRadians = false;
         double storedVal = 0;
         double inputA;
         double inputB;
@@ -28,6 +29,7 @@ public class MainApplication {
             String menuSelection = Console.getStringInput("  Press Key to select Menu option");
 
             switch (menuSelection) {
+
                 // User selects Clear - Will clear the current value and reset it to 0
                 case "C":
                     currVal = 0;
@@ -40,10 +42,27 @@ public class MainApplication {
 
                 // User selects Memory - Will take User to Memory Menu
                 case "M":
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
+                    switch (menuSelection){
+
+                        // User selects M+ - Will store the current value displayed to memory
+                        case "A":
+                            currVal = storedVal;
+                            break;
+                        // User selects MC - Will set the stored value to Zero
+                        case "B":
+                            storedVal = 0;
+                            break;
+                        // User selects MRC - Will set the current value to be the stored value
+                        case "C":
+                            storedVal = currVal;
+                            break;
+                    }
                     break;
 
                 // User selects Arithmetic - Will take User to Arithmetic Menu
                 case "A":
+                    Function.printArithmeticMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
@@ -83,7 +102,7 @@ public class MainApplication {
 
                 // User selects Exponential - Will take User to Exponential Menu
                 case "E":
-
+                    Function.printExponentialMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
@@ -114,7 +133,7 @@ public class MainApplication {
 
                 // User selects Trigonometry - Will take User to Trigonometry Menu
                 case "T":
-
+                    Function.printTrigonometryMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection){
 
@@ -163,12 +182,15 @@ public class MainApplication {
 
                 // User selects Logarithmic - Will take User to Logarithmic Menu
                 case "L":
-
+                    Function.printLogarithmicMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
                         // User selects Log
                         case "A":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            inputB = Console.getDoubleInput("Input a number: ");
+                            currVal = Function.getLog(inputA, inputB);
                             break;
                         // User selects Natural Log
                         case "B":
@@ -188,7 +210,7 @@ public class MainApplication {
 
                 // User selects Special - Will take User to Special Functions Menu
                 case "S":
-
+                    Function.printSpecialFunctionsMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
@@ -230,14 +252,13 @@ public class MainApplication {
 
     public static void printTopMenu(Double currVal) {
         System.out.format("|________________________Calculator________________________|\n");
-        System.out.format("%f\n", currVal);
+        System.out.format("%f\n",currVal);
         System.out.format("|__________________________________________________________|\n");
-        System.out.format("|  %s    |    %s   |    %s  |\n","[C] - Clear", "[I] - +/-", "[M] - Memory Menu");
-        System.out.format("|__________________________________________________________|\n");
-
     }
 
     public static void printMainMenu() {
+        System.out.format("|  %s    |    %s   |    %s  |\n","[C] - Clear", "[I] - +/-", "[M] - Memory Menu");
+        System.out.format("|__________________________________________________________|\n");
         System.out.format("|                         Main Menu                        |\n");
         System.out.format("|__________________________________________________________|\n");
         System.out.format("  [A] - Arithmetic  \n");

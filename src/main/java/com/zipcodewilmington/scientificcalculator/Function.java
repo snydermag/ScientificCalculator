@@ -95,19 +95,19 @@ public class Function {
 
     public static double getInverseSine(double inputA) {
         double result;
-        result = (1 / Math.cos(inputA));
+        result = (Math.asin(inputA));
         return result;
     }
 
     public static double getInverseCosine (double inputA) {
         double result;
-        result = (1/ Math.cos(inputA));
+        result = (Math.acos(inputA));
         return result;
     }
 
     public static double getInverseTan(double inputA) {
         double result;
-        result = (1/Math.tan(inputA));
+        result = (Math.atan(inputA));
         return result;
     }
 
@@ -187,16 +187,13 @@ public class Function {
         return result;
     }
 
-    //Print Main Menu Buttons
+    //Print Memory Menu Buttons
 
-    public static void printMainMenu(){
+    public static void printMemoryMenu(){
         System.out.format("A - M+\n" );
         System.out.format("B - MC\n" );
         System.out.format("C - MRC\n" );
     }
-
-
-    // Print Functions
 
     public static void printArithmeticMenu() {
         System.out.format("|                     Arithmetic Menu                      |\n");

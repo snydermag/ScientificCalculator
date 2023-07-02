@@ -72,10 +72,20 @@ public class MainApplication {
 
                         // User selects Addition - Will add two numbers to be inputted by User
                         case "A":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            inputB = Console.getDoubleInput("Input second number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
+                            try {
+                                inputB = Console.getDoubleInput("Input second number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getSum(inputA, inputB);
-                            break;
+                           break;
                         // User selects Subtraction - Will subtract two numbers to be inputted by User
                         case "B":
                             inputA = Console.getDoubleInput("Input first number:");

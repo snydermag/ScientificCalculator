@@ -437,7 +437,7 @@ public class MainApplication {
         System.out.format("✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖✧\n");
 
         System.out.format("|                         \uD835\uDDD6\uD835\uDDEE\uD835\uDDF9\uD835\uDDF0\uD835\uDE02\uD835\uDDF9\uD835\uDDEE\uD835\uDE01\uD835\uDDFC\uD835\uDDFF                          |\n");
-        if (isRadians == true) {
+        if (isRadians) {
             System.out.format("%s %52f %s\n","| Rad", currVal,"|");
         }
         else {

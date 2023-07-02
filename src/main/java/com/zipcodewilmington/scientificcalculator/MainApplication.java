@@ -28,6 +28,7 @@ public class MainApplication {
             String menuSelection = Console.getStringInput("  Press Key to select Menu option");
 
             switch (menuSelection) {
+
                 // User selects Clear - Will clear the current value and reset it to 0
                 case "C":
                     currVal = 0;
@@ -40,6 +41,22 @@ public class MainApplication {
 
                 // User selects Memory - Will take User to Memory Menu
                 case "M":
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
+                    switch (menuSelection){
+
+                        // User selects M+ - Will store the current value displayed to memory
+                        case "A":
+                            currVal = storedVal;
+                            break;
+                        // User selects MC - Will set the stored value to Zero
+                        case "B":
+                            storedVal = 0;
+                            break;
+                        // User selects MRC - Will set the current value to be the stored value
+                        case "C":
+                            storedVal = currVal;
+                            break;
+                    }
                     break;
 
                 // User selects Arithmetic - Will take User to Arithmetic Menu

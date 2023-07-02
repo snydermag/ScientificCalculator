@@ -187,16 +187,13 @@ public class Function {
         return result;
     }
 
-    //Print Main Menu Buttons
+    //Print Memory Menu Buttons
 
-    public static void printMainMenu(){
+    public static void printMemoryMenu(){
         System.out.format("A - M+\n" );
         System.out.format("B - MC\n" );
         System.out.format("C - MRC\n" );
     }
-
-
-    // Print Functions
 
     public static void printArithmeticMenu() {
         System.out.format("|                     Arithmetic Menu                      |\n");

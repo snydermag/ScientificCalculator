@@ -132,10 +132,9 @@ public class MainApplication {
                                 break;
                             }
 
-                            // Loop to prevent division by zero
-                            while (inputB == 0){
-                                System.out.println("ERROR: Cannot divide by Zero.");
-                                inputB = Console.getDoubleInput("Input second number:");
+                            if (inputA == 0) {
+                                System.out.println("You cannot divide by Zero. Returning to Main Menu.");
+                                break;
                             }
 
                             currVal = Function.getDivide(inputA, inputB);
@@ -164,6 +163,11 @@ public class MainApplication {
                                 inputA = Console.getDoubleInput("Input number:");
                             } catch (Exception e) {
                                 System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
+
+                            if (inputA < 0) {
+                                System.out.println("You cannot get the square root of a negative number. Returning to Main Menu.");
                                 break;
                             }
                             currVal = Function.getSquareRoot(inputA);

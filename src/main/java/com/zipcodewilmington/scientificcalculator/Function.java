@@ -187,8 +187,6 @@ public class Function {
         return result;
     }
 
-
-
     //Print Memory Menu Buttons
 
     public static void printMemoryMenu(){

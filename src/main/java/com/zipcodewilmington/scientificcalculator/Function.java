@@ -176,7 +176,16 @@ public class Function {
         double storedVal = memoryStored;
         return storedVal;
     }
+//    Radians to Degrees and Degrees to Radians function
+    public static double degToRad (double inputA) {
+        double result = inputA * (3.141592653589793/180);
+        return result;
+    }
 
+    public static double radtoDeg (double inputA) {
+        double result = inputA * (180/3.141592653589793);
+        return result;
+    }
 
     // Print Functions
 

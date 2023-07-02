@@ -17,7 +17,7 @@ public class MainApplication {
             printTopMenu(currVal, isRadians);
             printMainMenu();
 
-            String menuSelection = Console.getStringInput("Press Key to select Menu option:");
+            String menuSelection = Console.getStringInput("\uD835\uDE17\uD835\uDE33\uD835\uDE26\uD835\uDE34\uD835\uDE34 \uD835\uDE12\uD835\uDE26\uD835\uDE3A \uD835\uDE35\uD835\uDE30 \uD835\uDE34\uD835\uDE26\uD835\uDE2D\uD835\uDE26\uD835\uDE24\uD835\uDE35 \uD835\uDE14\uD835\uDE26\uD835\uDE2F\uD835\uDE36 \uD835\uDE30\uD835\uDE31\uD835\uDE35\uD835\uDE2A\uD835\uDE30\uD835\uDE2F");
 
             switch (menuSelection) {
 
@@ -34,7 +34,7 @@ public class MainApplication {
                 // User selects Memory - Will take User to Memory Menu
                 case "M":
                     // Print Calculator Menu
-                    printTopMenu(currVal, isRadians);
+                    printTopMenu(currVal,isRadians);
                     Function.printMemoryMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection){
@@ -51,12 +51,13 @@ public class MainApplication {
                         case "C":
                             storedVal = currVal;
                             break;
-                        // User selects Quit - Will return to Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return User to Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -66,7 +67,7 @@ public class MainApplication {
                     // Print Calculator Menu
                     printTopMenu(currVal, isRadians);
                     Function.printArithmeticMenu();
-                    menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
                         // User selects Addition - Will add two numbers to be inputted by User
@@ -87,70 +88,36 @@ public class MainApplication {
                            break;
                         // User selects Subtraction - Will subtract two numbers to be inputted by User
                         case "B":
-                            try {
-                                inputA = Console.getDoubleInput("Input first number:");
-                            } catch (Exception e) {
-                                System.out.println("Invalid Input. Returning to Main Menu.");
-                                break;
-                            }
-                            try {
-                                inputB = Console.getDoubleInput("Input second number:");
-                            } catch (Exception e) {
-                                System.out.println("Invalid Input. Returning to Main Menu.");
-                                break;
-                            }
+                            inputA = Console.getDoubleInput("Input first number:");
+                            inputB = Console.getDoubleInput("Input second number:");
                             currVal = Function.getSubtract(inputA, inputB);
                             break;
                         // User selects Multiply - Will multiply two numbers to be inputted by User
                         case "C":
-                            try {
-                                inputA = Console.getDoubleInput("Input first number:");
-                            } catch (Exception e) {
-                                System.out.println("Invalid Input. Returning to Main Menu.");
-                                break;
-                            }
-                            try {
-                                inputB = Console.getDoubleInput("Input second number:");
-                            } catch (Exception e) {
-                                System.out.println("Invalid Input. Returning to Main Menu.");
-                                break;
-                            }
+                            inputA = Console.getDoubleInput("Input first number:");
+                            inputB = Console.getDoubleInput("Input second number:");
                             currVal = Function.getMultiply(inputA, inputB);
                             break;
                         // User selects Divide - Will divide two numbers to be inputted by User
                         case "D":
-                            try {
-                                inputA = Console.getDoubleInput("Input first number:");
-                            } catch (Exception e) {
-                                System.out.println("Invalid Input. Returning to Main Menu.");
-                                break;
-                            }
-                            try {
-                                inputB = Console.getDoubleInput("Input second number:");
-                            } catch (Exception e) {
-                                System.out.println("Invalid Input. Returning to Main Menu.");
-                                break;
-                            }
+                            inputA = Console.getDoubleInput("Input first number:");
+                            inputB = Console.getDoubleInput("Input second number:");
 
                             // Loop to prevent division by zero
                             while (inputB == 0){
-                                System.out.println("ERROR: Cannot divide by Zero.");
-                                try {
-                                    inputB = Console.getDoubleInput("Input second number:");
-                                } catch (Exception e) {
-                                    System.out.println("Invalid Input. Returning to Main Menu.");
-                                    break;
-                                }
+                                System.out.println("ERROR: Cannot divide by Zero");
+                                inputB = Console.getDoubleInput("Input second number:");
                             }
 
                             currVal = Function.getDivide(inputA, inputB);
                             break;
-                        // User selects Quit - Will return to Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return User to Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu.");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -160,7 +127,7 @@ public class MainApplication {
                     // Print Calculator Menu
                     printTopMenu(currVal, isRadians);
                     Function.printExponentialMenu();
-                    menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
                         // User selects Square Root - Will find the square root of number to be inputted by User
@@ -185,12 +152,13 @@ public class MainApplication {
                             inputA = Console.getDoubleInput("Input first number:");
                             currVal = Function.getInverse(inputA);
                             break;
-                        // User selects Quit - Will return to Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return User to Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu.");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -200,7 +168,7 @@ public class MainApplication {
                     // Print Calculator Menu
                     printTopMenu(currVal, isRadians);
                     Function.printTrigonometryMenu();
-                    menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection){
 
                         // User selects Sine - Will find Sine of number inputted by User
@@ -233,22 +201,22 @@ public class MainApplication {
                             inputA = Console.getDoubleInput("Input a number:");
                             currVal = Function.getInverseTan(inputA);
                             break;
-                        // User selects Degrees/Radians - Will convert the number provided by User
-                        case "R" :
-                            if (isRadians) {
-                                currVal = Function.radToDeg(currVal);
-                            }
-                            else {
-                                currVal = Function.degToRad(currVal);
-                            }
+                            // User selects Degree to Radians - Will convert the number provided by User
+                        case "G" :
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.degToRad(inputA);
                             break;
-
-                        // User selects Quit - Will return to Main Menu
+                        // User selects Radians to Degrees - Will convert the number provided by User
+                        case "H":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.radToDeg(inputA);
+                            // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return User to Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu.");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
 
                     }
@@ -259,7 +227,7 @@ public class MainApplication {
                     // Print Calculator Menu
                     printTopMenu(currVal, isRadians);
                     Function.printLogarithmicMenu();
-                    menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
                         // User selects Log
@@ -301,12 +269,13 @@ public class MainApplication {
                         // User selects Inverse Log
                         case "D":
                             break;
-                        // User selects Quit - Will return to Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return User to Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu.");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -316,7 +285,7 @@ public class MainApplication {
                     // Print Calculator Menu
                     printTopMenu(currVal, isRadians);
                     Function.printSpecialFunctionsMenu();
-                    menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
                         // User selects Absolute Value - Will return the Absolute Value of number inputted by User
@@ -355,12 +324,13 @@ public class MainApplication {
                             }
                             currVal = Function.getFactorial((int)inputA);
                             break;
-                        // User selects Quit - Will return to Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return User to Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu.");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -384,28 +354,30 @@ public class MainApplication {
 
     public static void printTopMenu(Double currVal, boolean isRadians) {
 
-        System.out.format("|________________________Calculator________________________|\n");
+        System.out.format("✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖✧\n");
+
+        System.out.format("|                         \uD835\uDDD6\uD835\uDDEE\uD835\uDDF9\uD835\uDDF0\uD835\uDE02\uD835\uDDF9\uD835\uDDEE\uD835\uDE01\uD835\uDDFC\uD835\uDDFF                          |\n");
         if (isRadians == true) {
             System.out.format("%s %52f %s\n","| Rad", currVal,"|");
         }
         else {
             System.out.format("%s %56f %s\n", "|", currVal, "|");
         }
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
     }
 
     public static void printMainMenu() {
         System.out.format("|  %s    |    %s   |    %s  |\n","[C] - Clear", "[I] - +/-", "[M] - Memory Menu");
-        System.out.format("|__________________________________________________________|\n");
-        System.out.format("|                         Main Menu                        |\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
+        System.out.format("|                          \uD835\uDDE0\uD835\uDDF2\uD835\uDDFB\uD835\uDE02                            |\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
         System.out.format("%s %s %42s", "|","[A] - Arithmetic","|\n");
         System.out.format("%s %s %41s", "|", "[E] - Exponential", "|\n");
         System.out.format("%s %s %40s", "|", "[T] - Trigonometry", "|\n");
         System.out.format("%s %s %41s", "|","[L] - Logarithmic", "|\n");
         System.out.format("%s %s %45s", "|", "[S] - Special", "|\n");
         System.out.format("%s %s %48s", "|", "[Q] - Quit", "|\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
 
     }
 }

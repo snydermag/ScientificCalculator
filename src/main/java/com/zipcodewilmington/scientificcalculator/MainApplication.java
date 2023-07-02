@@ -264,18 +264,38 @@ public class MainApplication {
 
                         // User selects Log
                         case "A":
-                            inputA = Console.getDoubleInput("Input a number:");
-                            inputB = Console.getDoubleInput("Input a number: ");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
+                            try {
+                                inputB = Console.getDoubleInput("Input second number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getLog(inputA, inputB);
                             break;
                         // User selects Natural Log
                         case "B":
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getLN(inputA);
                             break;
                         // User selects Log base 10
                         case "C":
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getLog10(inputA);
                             break;
                         // User selects Inverse Log
@@ -301,18 +321,38 @@ public class MainApplication {
 
                         // User selects Absolute Value - Will return the Absolute Value of number inputted by User
                         case "A":
-                            inputA = Console.getDoubleInput("Input number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getAbsValue(inputA);
                             break;
                         // User selects Pythagorean Theorem
                         case "B":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            inputB = Console.getDoubleInput("Input second number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
+                            try {
+                                inputB = Console.getDoubleInput("Input second number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getPythagoreanTheorem(inputA, inputB);
                             break;
 //                        User Selects Factorial
                         case "C":
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getFactorial((int)inputA);
                             break;
                         // User selects Quit - Will return to Main Menu

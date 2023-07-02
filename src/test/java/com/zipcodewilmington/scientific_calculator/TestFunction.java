@@ -143,6 +143,20 @@ public class TestFunction {
         Assert.assertEquals(actual,expected,0.001);
     }
 
+    @Test
+    public void  testDegToRad () {
+        double actual = Function.degToRad( 5.5);
+        double expected = 0.09599310885968812;
+        Assert.assertEquals(actual,expected,0.001);
+    }
+
+
+    @Test
+    public void  testRadToDeg () {
+        double actual = Function.radtoDeg(2.5);
+        double expected = 0;
+        Assert.assertEquals(actual,expected,0.0001);
+    }
 }
 
 

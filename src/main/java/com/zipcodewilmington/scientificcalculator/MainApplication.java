@@ -57,7 +57,7 @@ public class MainApplication {
                             break;
                         // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main MenuM");
+                            System.out.println("Invalid input. Returning to Main Menu");
                             break;
                     }
                     break;
@@ -107,7 +107,7 @@ public class MainApplication {
                             break;
                         // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main MenuM");
+                            System.out.println("Invalid input. Returning to Main Menu");
                             break;
                     }
                     break;
@@ -148,7 +148,7 @@ public class MainApplication {
                             break;
                         // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main MenuM");
+                            System.out.println("Invalid input. Returning to Main Menu");
                             break;
                     }
                     break;
@@ -206,7 +206,7 @@ public class MainApplication {
                             break;
                         // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main MenuM");
+                            System.out.println("Invalid input. Returning to Main Menu");
                             break;
 
                     }
@@ -245,7 +245,7 @@ public class MainApplication {
                             break;
                         // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main MenuM");
+                            System.out.println("Invalid input. Returning to Main Menu");
                             break;
                     }
                     break;
@@ -280,7 +280,7 @@ public class MainApplication {
                             break;
                         // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main MenuM");
+                            System.out.println("Invalid input. Returning to Main Menu");
                             break;
                     }
                     break;

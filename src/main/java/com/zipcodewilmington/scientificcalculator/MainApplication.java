@@ -250,9 +250,16 @@ public class MainApplication {
     }
 
 
-    public static void printTopMenu(Double currVal) {
+    public static void printTopMenu(Double currVal, boolean isRadians) {
+
         System.out.format("|________________________Calculator________________________|\n");
-        System.out.format("%f\n",currVal);
+        if (isRadians = true) {
+            System.out.format("%s %f\n","Rad", currVal);
+        }
+        else {
+            System.out.format("%f\n",currVal);
+        }
+
         System.out.format("|__________________________________________________________|\n");
     }
 

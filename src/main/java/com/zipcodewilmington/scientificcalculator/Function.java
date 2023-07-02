@@ -217,8 +217,7 @@ public class Function {
         System.out.format("D - Inverse Sine\n");
         System.out.format("E - Inverse Cosine\n");
         System.out.format("F - Inverse Tangent\n");
-        System.out.format("G - Degrees to Radians \n");
-        System.out.format("H - Radians to Degrees\n");
+        System.out.format("R - Degrees/Radians\n");
         System.out.format("Q - Previous Menu\n");
         System.out.format("|__________________________________________________________|\n");
     }

@@ -17,7 +17,7 @@ public class MainApplication {
             printTopMenu(currVal, isRadians);
             printMainMenu();
 
-            String menuSelection = Console.getStringInput("Press Key to select Menu option:");
+            String menuSelection = Console.getStringInput("  Press Key to select Menu option");
 
             switch (menuSelection) {
 
@@ -51,12 +51,13 @@ public class MainApplication {
                         case "C":
                             storedVal = currVal;
                             break;
-                        // User selects Quit - Will return to Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return User to Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -66,7 +67,7 @@ public class MainApplication {
                     // Print Calculator Menu
                     printTopMenu(currVal, isRadians);
                     Function.printArithmeticMenu();
-                    menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
                         // User selects Addition - Will add two numbers to be inputted by User
@@ -130,27 +131,23 @@ public class MainApplication {
                             } catch (Exception e) {
                                 System.out.println("Invalid Input. Returning to Main Menu.");
                                 break;
-                            }
+                            };
 
                             // Loop to prevent division by zero
                             while (inputB == 0){
-                                System.out.println("ERROR: Cannot divide by Zero.");
-                                try {
-                                    inputB = Console.getDoubleInput("Input second number:");
-                                } catch (Exception e) {
-                                    System.out.println("Invalid Input. Returning to Main Menu.");
-                                    break;
-                                }
+                                System.out.println("ERROR: Cannot divide by Zero");
+                                inputB = Console.getDoubleInput("Input second number:");
                             }
 
                             currVal = Function.getDivide(inputA, inputB);
                             break;
-                        // User selects Quit - Will return to Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return User to Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu.");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -160,37 +157,63 @@ public class MainApplication {
                     // Print Calculator Menu
                     printTopMenu(currVal, isRadians);
                     Function.printExponentialMenu();
-                    menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
                         // User selects Square Root - Will find the square root of number to be inputted by User
                         case "A":
-                            inputA = Console.getDoubleInput("Input number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getSquareRoot(inputA);
                             break;
                         // User selects Square - Will square number to be inputted by User
                         case "B":
-                            inputA = Console.getDoubleInput("Input number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getSquare(inputA);
                             break;
                         // User selects Exponent - Will find the value of number to the power of another number
                         // (both inputted by User)
                         case "C":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            inputB = Console.getDoubleInput("Input second number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
+                            try {
+                                inputB = Console.getDoubleInput("Input second number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getExponent(inputA, inputB);
                             break;
                         // User selects Inverse - Will find the value of 1 divided by number inputted by User
                         case "D":
-                            inputA = Console.getDoubleInput("Input first number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getInverse(inputA);
                             break;
-                        // User selects Quit - Will return to Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return User to Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu.");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -200,54 +223,95 @@ public class MainApplication {
                     // Print Calculator Menu
                     printTopMenu(currVal, isRadians);
                     Function.printTrigonometryMenu();
-                    menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection){
 
                         // User selects Sine - Will find Sine of number inputted by User
                         case "A":
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getSine(inputA);
                             break;
                         // User selects Cosine - Will find Cosine of number inputted by User
                         case "B":
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getCosine(inputA);
                             break;
                         // User selects Tangent - Will find Tangent of number inputted by User
                         case "C":
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getTangent(inputA);
                             break;
                         // User selects Inverse Sine - Will find Cosecant of number inputted by User
                         case "D":
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getInverseSine(inputA);
                             break;
                         // User selects Inverse Cosine - Will find Secant of number inputted by User
                         case "E":
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getInverseCosine(inputA);
                             break;
                         // User selects Inverse Tangent - Will find Cotangent of number inputted by User
                         case "F":
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getInverseTan(inputA);
                             break;
-                        // User selects Degree to Radians - Will convert the number provided by User
+                            // User selects Degree to Radians - Will convert the number provided by User
                         case "G" :
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.degToRad(inputA);
                             break;
                         // User selects Radians to Degrees - Will convert the number provided by User
                         case "H":
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.radToDeg(inputA);
-                        // User selects Quit - Will return to Main Menu
+                            // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return User to Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu.");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
 
                     }
@@ -258,34 +322,55 @@ public class MainApplication {
                     // Print Calculator Menu
                     printTopMenu(currVal, isRadians);
                     Function.printLogarithmicMenu();
-                    menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
                         // User selects Log
                         case "A":
-                            inputA = Console.getDoubleInput("Input a number:");
-                            inputB = Console.getDoubleInput("Input a number: ");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
+                            try {
+                                inputB = Console.getDoubleInput("Input second number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getLog(inputA, inputB);
                             break;
                         // User selects Natural Log
                         case "B":
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getLN(inputA);
                             break;
                         // User selects Log base 10
                         case "C":
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getLog10(inputA);
                             break;
                         // User selects Inverse Log
                         case "D":
                             break;
-                        // User selects Quit - Will return to Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return User to Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu.");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -295,31 +380,52 @@ public class MainApplication {
                     // Print Calculator Menu
                     printTopMenu(currVal, isRadians);
                     Function.printSpecialFunctionsMenu();
-                    menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
 
                         // User selects Absolute Value - Will return the Absolute Value of number inputted by User
                         case "A":
-                            inputA = Console.getDoubleInput("Input number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getAbsValue(inputA);
                             break;
                         // User selects Pythagorean Theorem
                         case "B":
-                            inputA = Console.getDoubleInput("Input first number:");
-                            inputB = Console.getDoubleInput("Input second number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
+                            try {
+                                inputB = Console.getDoubleInput("Input second number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getPythagoreanTheorem(inputA, inputB);
                             break;
 //                        User Selects Factorial
                         case "C":
-                            inputA = Console.getDoubleInput("Input a number:");
+                            try {
+                                inputA = Console.getDoubleInput("Input first number:");
+                            } catch (Exception e) {
+                                System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
                             currVal = Function.getFactorial((int)inputA);
                             break;
-                        // User selects Quit - Will return to Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return User to Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu.");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;

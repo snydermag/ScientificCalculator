@@ -148,6 +148,16 @@ public class MainApplication {
                             inputA = Console.getDoubleInput("Input a number:");
                             currVal = Function.getInverseTan(inputA);
                             break;
+                            // User selects Degree to Radians - Will convert the number provided by User
+                        case "G" :
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.degToRad(inputA);
+                            break;
+                        // User selects Radians to Degrees - Will convert the number provided by User
+                        case "H":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.radToDeg(inputA);
+
                     }
                     break;
 

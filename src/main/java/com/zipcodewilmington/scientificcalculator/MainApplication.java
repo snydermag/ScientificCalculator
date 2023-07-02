@@ -301,10 +301,10 @@ public class MainApplication {
 
         System.out.format("|________________________Calculator________________________|\n");
         if (isRadians = true) {
-            System.out.format("%s %f\n","Rad ", currVal);
+            System.out.format("%s %52f %s\n","| Rad", currVal,"|");
         }
         else {
-            System.out.format("%f\n",currVal);
+            System.out.format("%f\n", currVal);
         }
         System.out.format("|__________________________________________________________|\n");
     }
@@ -314,12 +314,12 @@ public class MainApplication {
         System.out.format("|__________________________________________________________|\n");
         System.out.format("|                         Main Menu                        |\n");
         System.out.format("|__________________________________________________________|\n");
-        System.out.format("  [A] - Arithmetic  \n");
-        System.out.format("  [E] - Exponential  \n");
-        System.out.format("  [T] - Trigonometry  \n");
-        System.out.format("  [L] - Logarithmic  \n");
-        System.out.format("  [S] - Special  \n");
-        System.out.format("  [Q] - Quit\n");
+        System.out.format( "%s %s %42s", "|","[A] - Arithmetic","|\n");
+        System.out.format("%s %s %41s", "|", "[E] - Exponential", "|\n");
+        System.out.format("%s %s %40s", "|", "[T] - Trigonometry", "|\n");
+        System.out.format("%s %s %41s", "|","[L] - Logarithmic", "|\n");
+        System.out.format("%s %s %45s", "|", "[S] - Special", "|\n");
+        System.out.format("%s %s %48s", "|", "[Q] - Quit", "|\n");
         System.out.format("|__________________________________________________________|\n");
 
 

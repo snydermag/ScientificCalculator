@@ -300,7 +300,7 @@ public class MainApplication {
     public static void printTopMenu(Double currVal, boolean isRadians) {
 
         System.out.format("|________________________Calculator________________________|\n");
-        if (isRadians = true) {
+        if (isRadians == true) {
             System.out.format("%s %52f %s\n","| Rad", currVal,"|");
         }
         else {

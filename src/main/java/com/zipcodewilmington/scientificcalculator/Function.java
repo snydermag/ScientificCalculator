@@ -178,14 +178,23 @@ public class Function {
     }
 //    Radians/Degrees functions
     public static double degToRad (double inputA) {
-        double result = inputA * (3.141592653589793/180);
+        double result = inputA * (Math.PI/180);
         return result;
     }
 
     public static double radToDeg (double inputA) {
-        double result = inputA * (180/3.141592653589793);
+        double result = inputA * (180/Math.PI);
         return result;
     }
+
+    //Print Main Menu Buttons
+
+    public static void printMainMenu(){
+        System.out.format("A - M+\n" );
+        System.out.format("B - MC\n" );
+        System.out.format("C - MRC\n" );
+    }
+
 
     // Print Functions
 

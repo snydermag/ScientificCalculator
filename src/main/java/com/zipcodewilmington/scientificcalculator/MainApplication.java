@@ -202,16 +202,16 @@ public class MainApplication {
     }
     public static void printMainMenu() {
         System.out.format("  **Calculator**\n|_________________|\n  Main Menu\n");
-        System.out.format("|________________________________________________________________________________________________________________________|\n");
-        System.out.format("%s %s %s","  C - Clear", "I - +/-", "M - M+\n");
-        System.out.format("|________________________________________________________________________________________________________________________|\n");
-        System.out.format("  A - Arithmetic  ");
-        System.out.format("  E - Exponential  ");
-        System.out.format("  T - Trigonometry  ");
-        System.out.format("  L - Logarithmic  ");
-        System.out.format("  S - Special  ");
-        System.out.format("  Q - Quit\n");
-        System.out.format("|________________________________________________________________________________________________________________________|\n");
+        System.out.format("|______________________________________________________________________________________________________________________|\n");
+        System.out.format("%s %s %s","  [C] - Clear", "[I] - +/-", "[M] - M+\n");
+        System.out.format("|______________________________________________________________________________________________________________________|\n");
+        System.out.format("  [A] - Arithmetic  ");
+        System.out.format("  [E] - Exponential  ");
+        System.out.format("  [T] - Trigonometry  ");
+        System.out.format("  [L] - Logarithmic  ");
+        System.out.format("  [S] - Special  ");
+        System.out.format("  [Q] - Quit\n");
+        System.out.format("|______________________________________________________________________________________________________________________|\n");
 
 
     }

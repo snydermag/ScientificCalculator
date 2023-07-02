@@ -41,7 +41,7 @@ public class MainApplication {
 
                         // User selects M+ - Will store the current value displayed to memory
                         case "A":
-                            currVal = storedVal;
+                            storedVal = currVal;
                             break;
                         // User selects MC - Will set the stored value to Zero
                         case "B":
@@ -49,7 +49,7 @@ public class MainApplication {
                             break;
                         // User selects MRC - Will set the current value to be the stored value
                         case "C":
-                            storedVal = currVal;
+                            currVal = storedVal;
                             break;
                         // User selects Quit - Will return User to Main Menu
                         case "Q":

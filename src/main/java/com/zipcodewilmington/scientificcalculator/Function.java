@@ -187,22 +187,6 @@ public class Function {
         return result;
     }
 
-    public static void preventString (double inputA ) {
-
-        boolean validInputA = false;
-
-        while (!validInputA) {
-            try {
-                inputA = Double.parseDouble(Console.getStringInput("Input first number:"));
-                validInputA = true;
-            } catch (NumberFormatException e) {
-                System.out.println("Invalid input for the first number. Please enter a valid double value.");
-            }
-        }
-
-    }
-
-
     //Print Memory Menu Buttons
 
     public static void printMemoryMenu(){

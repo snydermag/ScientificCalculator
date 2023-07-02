@@ -9,7 +9,7 @@ public class MainApplication {
         double currVal = 0;
         boolean isRadians = false;
         double storedVal = 0;
-        double inputA;
+        double inputA ;
         double inputB;
 
 

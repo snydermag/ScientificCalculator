@@ -314,7 +314,7 @@ public class MainApplication {
         System.out.format("|__________________________________________________________|\n");
         System.out.format("|                         Main Menu                        |\n");
         System.out.format("|__________________________________________________________|\n");
-        System.out.format( "%s %s %42s", "|","[A] - Arithmetic","|\n");
+        System.out.format("%s %s %42s", "|","[A] - Arithmetic","|\n");
         System.out.format("%s %s %41s", "|", "[E] - Exponential", "|\n");
         System.out.format("%s %s %40s", "|", "[T] - Trigonometry", "|\n");
         System.out.format("%s %s %41s", "|","[L] - Logarithmic", "|\n");

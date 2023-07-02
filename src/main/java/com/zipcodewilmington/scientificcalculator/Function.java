@@ -190,9 +190,13 @@ public class Function {
     //Print Memory Menu Buttons
 
     public static void printMemoryMenu(){
+        System.out.format("|                       Memory Menu                        |\n");
+        System.out.format("|__________________________________________________________|\n");
         System.out.format("A - M+\n" );
         System.out.format("B - MC\n" );
         System.out.format("C - MRC\n" );
+        System.out.format("Q - Previous Menu\n");
+        System.out.format("|__________________________________________________________|\n");
     }
 
     public static void printArithmeticMenu() {

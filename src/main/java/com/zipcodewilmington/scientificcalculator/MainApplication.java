@@ -22,6 +22,7 @@ public class MainApplication {
 //        Console.println("The user input %s as a d", d);
 
         while (inMenu) {
+            printTopMenu(currVal);
             printMainMenu();
 
             String menuSelection = Console.getStringInput("  Press Key to select Menu option");
@@ -29,10 +30,12 @@ public class MainApplication {
             switch (menuSelection) {
                 // User selects Clear - Will clear the current value and reset it to 0
                 case "C":
+                    currVal = 0;
                     break;
 
                 // User selects Inverse - Will negate the current value
                 case "I":
+                    currVal = Function.getNegate(currVal);
                     break;
 
                 // User selects Memory - Will take User to Memory Menu
@@ -66,6 +69,13 @@ public class MainApplication {
                         case "D":
                             inputA = Console.getDoubleInput("Input first number:");
                             inputB = Console.getDoubleInput("Input second number:");
+
+                            // Loop to prevent division by zero
+                            while (inputB == 0){
+                                System.out.println("ERROR: Cannot divide by Zero");
+                                inputB = Console.getDoubleInput("Input second number:");
+                            }
+
                             currVal = Function.getDivide(inputA, inputB);
                             break;
                     }
@@ -73,8 +83,10 @@ public class MainApplication {
 
                 // User selects Exponential - Will take User to Exponential Menu
                 case "E":
+
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
+
                         // User selects Square Root - Will find the square root of number to be inputted by User
                         case "A":
                             inputA = Console.getDoubleInput("Input number:");
@@ -102,9 +114,11 @@ public class MainApplication {
 
                 // User selects Trigonometry - Will take User to Trigonometry Menu
                 case "T":
+
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection){
-                        // User selects Sin - Will find Sine of number inputted by User
+
+                        // User selects Sine - Will find Sine of number inputted by User
                         case "A":
                             inputA = Console.getDoubleInput("Input a number:");
                             currVal = Function.getSine(inputA);
@@ -139,8 +153,10 @@ public class MainApplication {
 
                 // User selects Logarithmic - Will take User to Logarithmic Menu
                 case "L":
+
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
+
                         // User selects Log
                         case "A":
                             break;
@@ -162,8 +178,10 @@ public class MainApplication {
 
                 // User selects Special - Will take User to Special Functions Menu
                 case "S":
+
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
+
                         // User selects Absolute Value - Will return the Absolute Value of number inputted by User
                         case "A":
                             inputA = Console.getDoubleInput("Input number:");
@@ -197,21 +215,28 @@ public class MainApplication {
 
         }
 
+    }
 
+
+    public static void printTopMenu(Double currVal) {
+        System.out.format("|________________________Calculator________________________|\n");
+        System.out.format("%f\n", currVal);
+        System.out.format("|__________________________________________________________|\n");
+        System.out.format("%s      |      %s      |      %s","  [C] - Clear", "[I] - +/-", "[M] - M+\n");
+        System.out.format("|__________________________________________________________|\n");
 
     }
+
     public static void printMainMenu() {
-        System.out.format("  **Calculator**\n|_________________|\n  Main Menu\n");
-        System.out.format("|______________________________________________________________________________________________________________________|\n");
-        System.out.format("%s %s %s","  [C] - Clear", "[I] - +/-", "[M] - M+\n");
-        System.out.format("|______________________________________________________________________________________________________________________|\n");
-        System.out.format("  [A] - Arithmetic  ");
-        System.out.format("  [E] - Exponential  ");
-        System.out.format("  [T] - Trigonometry  ");
-        System.out.format("  [L] - Logarithmic  ");
-        System.out.format("  [S] - Special  ");
+        System.out.format("|                         Main Menu                        |\n");
+        System.out.format("|__________________________________________________________|\n");
+        System.out.format("  [A] - Arithmetic  \n");
+        System.out.format("  [E] - Exponential  \n");
+        System.out.format("  [T] - Trigonometry  \n");
+        System.out.format("  [L] - Logarithmic  \n");
+        System.out.format("  [S] - Special  \n");
         System.out.format("  [Q] - Quit\n");
-        System.out.format("|______________________________________________________________________________________________________________________|\n");
+        System.out.format("|__________________________________________________________|\n");
 
 
     }

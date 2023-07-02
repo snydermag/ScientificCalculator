@@ -182,7 +182,7 @@ public class Function {
         return result;
     }
 
-    public static double radtoDeg (double inputA) {
+    public static double radToDeg (double inputA) {
         double result = inputA * (180/3.141592653589793);
         return result;
     }
@@ -216,8 +216,10 @@ public class Function {
     }
 
     public static void printLogarithmicMenu() {
-        System.out.format("A - LN\n");
-        System.out.format("B - Log10\n");
+        System.out.format("A - Log\n");
+        System.out.format("B - LN\n");
+        System.out.format("C - Log10\n");
+        System.out.format("D - e\n");
     }
 
     public static void printSpecialFunctionsMenu() {

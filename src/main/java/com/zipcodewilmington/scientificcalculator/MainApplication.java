@@ -13,17 +13,8 @@ public class MainApplication {
         double inputB;
 
 
-//        Console.println("Welcome to my calculator!");
-//        String s = Console.getStringInput("Enter a string");
-//        Integer i = Console.getIntegerInput("Enter an integer");
-//        Double d = Console.getDoubleInput("Enter a double.");
-//
-//        Console.println("The user input %s as a string", s);
-//        Console.println("The user input %s as an integer", i);
-//        Console.println("The user input %s as a d", d);
-
         while (inMenu) {
-            printTopMenu(currVal);
+            printTopMenu(currVal, isRadians);
             printMainMenu();
 
             String menuSelection = Console.getStringInput("  Press Key to select Menu option");
@@ -259,7 +250,6 @@ public class MainApplication {
         else {
             System.out.format("%f\n",currVal);
         }
-
         System.out.format("|__________________________________________________________|\n");
     }
 

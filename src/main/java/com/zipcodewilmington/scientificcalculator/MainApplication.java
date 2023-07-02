@@ -51,12 +51,13 @@ public class MainApplication {
                         case "C":
                             storedVal = currVal;
                             break;
-                        // User selects Quit - Will return user to the Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return user to the Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -100,12 +101,13 @@ public class MainApplication {
 
                             currVal = Function.getDivide(inputA, inputB);
                             break;
-                        // User selects Quit - Will return user to the Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return user to the Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -140,12 +142,13 @@ public class MainApplication {
                             inputA = Console.getDoubleInput("Input first number:");
                             currVal = Function.getInverse(inputA);
                             break;
-                        // User selects Quit - Will return user to the Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return user to the Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -188,22 +191,22 @@ public class MainApplication {
                             inputA = Console.getDoubleInput("Input a number:");
                             currVal = Function.getInverseTan(inputA);
                             break;
-                        // User selects Degree/Radian - Will convert the number provided by User
-                        case "R" :
+                            // User selects Degree to Radians - Will convert the number provided by User
+                        case "G" :
                             inputA = Console.getDoubleInput("Input a number:");
-                            if (isRadians){
-                                currVal = Function.radToDeg(currVal);
-                            }
-                            else {
-                                currVal = Function.degToRad(inputA);
-                            }
+                            currVal = Function.degToRad(inputA);
                             break;
-                        // User selects Quit - Will return user to the Main Menu
+                        // User selects Radians to Degrees - Will convert the number provided by User
+                        case "H":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.radToDeg(inputA);
+                            // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return user to the Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
 
                     }
@@ -236,12 +239,13 @@ public class MainApplication {
                         // User selects Inverse Log
                         case "D":
                             break;
-                        // User selects Quit - Will return user to the Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return user to the Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -270,12 +274,13 @@ public class MainApplication {
                             inputA = Console.getDoubleInput("Input a number:");
                             currVal = Function.getFactorial((int)inputA);
                             break;
-                        // User selects Quit - Will return user to the Main Menu
+                        // User selects Quit - Will exit the program
                         case "Q":
+                            inMenu = false;
                             break;
-                        // User enters an invalid Menu option - Will return user to the Main Menu
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
                         default:
-                            System.out.println("Invalid input. Returning to Main Menu");
+                            System.out.println("Invalid input. Returning to Main MenuM");
                             break;
                     }
                     break;
@@ -304,7 +309,7 @@ public class MainApplication {
             System.out.format("%s %52f %s\n","| Rad", currVal,"|");
         }
         else {
-            System.out.format("%f\n", currVal);
+            System.out.format("%s %56f %s\n", "|", currVal, "|");
         }
         System.out.format("|__________________________________________________________|\n");
     }
@@ -322,8 +327,5 @@ public class MainApplication {
         System.out.format("%s %s %48s", "|", "[Q] - Quit", "|\n");
         System.out.format("|__________________________________________________________|\n");
 
-
     }
-
-
 }

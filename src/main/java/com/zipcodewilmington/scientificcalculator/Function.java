@@ -2,7 +2,7 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class Function {
 
-//Arithmetic Functions
+    // Arithmetic Functions
     public static double getSum (double inputA , double inputB) {
         double result = 0;
 
@@ -36,7 +36,7 @@ public class Function {
         return  result;
     }
 
-//    Exponential Functions
+    // Exponential Functions
 
     public static double getSquareRoot(double inputA) {
         double result;
@@ -73,7 +73,7 @@ public class Function {
         return result;
     }
 
-//    Trigonometry Functions
+    // Trigonometry Functions
 
     public static double getSine(double inputA) {
         double result;
@@ -161,22 +161,8 @@ public class Function {
         return result;
     }
 
-    // Memory Functions
-    public static double addMemory(double memoryStored) {
-        double storedVal = memoryStored;
-        return storedVal;
 
-    }
-    public static double clearMemory() {
-        return 0;
-    }
-
-
-    public static double recallMemory(double memoryStored) {
-        double storedVal = memoryStored;
-        return storedVal;
-    }
-//    Radians/Degrees functions
+    // Radians/Degrees Functions
     public static double degToRad (double inputA) {
         double result = inputA * (Math.PI/180);
         return result;
@@ -188,7 +174,6 @@ public class Function {
     }
 
     //Print Memory Menu Buttons
-
     public static void printMemoryMenu(){
         System.out.format("|                       Memory Menu                        |\n");
         System.out.format("|__________________________________________________________|\n");

@@ -345,8 +345,6 @@ public class MainApplication {
                     System.out.println("Invalid input. Please try again.");
                     break;
             }
-
-
         }
 
     }

@@ -95,19 +95,19 @@ public class Function {
 
     public static double getInverseSine(double inputA) {
         double result;
-        result = (1 / Math.cos(inputA));
+        result = (Math.asin(inputA));
         return result;
     }
 
     public static double getInverseCosine (double inputA) {
         double result;
-        result = (1/ Math.cos(inputA));
+        result = (Math.acos(inputA));
         return result;
     }
 
     public static double getInverseTan(double inputA) {
         double result;
-        result = (1/Math.tan(inputA));
+        result = (Math.atan(inputA));
         return result;
     }
 

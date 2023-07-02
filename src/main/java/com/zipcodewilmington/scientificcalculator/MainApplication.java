@@ -238,7 +238,7 @@ public class MainApplication {
     }
 
     public static void printMainMenu() {
-        System.out.format("|                         Main Menu                        |\n");
+        System.out.format("|                        Main Menu                         |\n");
         System.out.format("|__________________________________________________________|\n");
         System.out.format("  [A] - Arithmetic  \n");
         System.out.format("  [E] - Exponential  \n");

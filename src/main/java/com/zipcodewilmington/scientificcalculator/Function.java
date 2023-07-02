@@ -152,7 +152,7 @@ public class Function {
         for (i = 1; i <= inputA; i++) {
             result = result * i;
         }
-        return result;
+        return (double)result;
     }
 
     public static double getNegate(double inputA) {
@@ -176,7 +176,7 @@ public class Function {
         double storedVal = memoryStored;
         return storedVal;
     }
-//    Radians to Degrees and Degrees to Radians function
+//    Radians/Degrees functions
     public static double degToRad (double inputA) {
         double result = inputA * (3.141592653589793/180);
         return result;

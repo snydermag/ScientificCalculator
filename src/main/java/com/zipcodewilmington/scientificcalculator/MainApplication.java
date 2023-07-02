@@ -24,7 +24,7 @@ public class MainApplication {
         while (inMenu) {
             printMainMenu();
 
-            String menuSelection = Console.getStringInput("Press Key to select Menu option");
+            String menuSelection = Console.getStringInput("  Press Key to select Menu option");
 
             switch (menuSelection) {
                 // User selects Clear - Will clear the current value and reset it to 0
@@ -106,21 +106,33 @@ public class MainApplication {
                     switch (menuSelection){
                         // User selects Sin - Will find Sine of number inputted by User
                         case "A":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.getSine(inputA);
                             break;
                         // User selects Cosine - Will find Cosine of number inputted by User
                         case "B":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.getCosine(inputA);
                             break;
                         // User selects Tangent - Will find Tangent of number inputted by User
                         case "C":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.getTangent(inputA);
                             break;
                         // User selects Inverse Sine - Will find Cosecant of number inputted by User
                         case "D":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.getInverseSine(inputA);
                             break;
                         // User selects Inverse Cosine - Will find Secant of number inputted by User
                         case "E":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.getInverseCosine(inputA);
                             break;
                         // User selects Inverse Tangent - Will find Cotangent of number inputted by User
                         case "F":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.getInverseTan(inputA);
                             break;
                     }
                     break;
@@ -129,16 +141,20 @@ public class MainApplication {
                 case "L":
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection) {
-                        // User selects
+                        // User selects Log
                         case "A":
                             break;
-                        // User selects
+                        // User selects Natural Log
                         case "B":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.getLN(inputA);
                             break;
-                        // User selects
+                        // User selects Log base 10
                         case "C":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.getLog10(inputA);
                             break;
-                        // User selects
+                        // User selects Inverse Log
                         case "D":
                             break;
                     }
@@ -159,7 +175,10 @@ public class MainApplication {
                             inputB = Console.getDoubleInput("Input second number:");
                             currVal = Function.getPythagoreanTheorem(inputA, inputB);
                             break;
+//                        User Selects Factorial
                         case "C":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            currVal = Function.getFactorial((int)inputA);
                             break;
                     }
                     break;
@@ -182,15 +201,18 @@ public class MainApplication {
 
     }
     public static void printMainMenu() {
-        System.out.format("Main Menu\n");
-        System.out.format("%s %s %s","C - Clear", "I - +/-", "M - M+\n");
-        System.out.format("______");
-        System.out.format("A - Arithmetic");
-        System.out.format("E - Exponential");
-        System.out.format("T - Trigonometry");
-        System.out.format("L - Logarithmic");
-        System.out.format("S - Special");
-        System.out.format("Q - Quit");
+        System.out.format("  **Calculator**\n|_________________|\n  Main Menu\n");
+        System.out.format("|________________________________________________________________________________________________________________________|\n");
+        System.out.format("%s %s %s","  C - Clear", "I - +/-", "M - M+\n");
+        System.out.format("|________________________________________________________________________________________________________________________|\n");
+        System.out.format("  A - Arithmetic  ");
+        System.out.format("  E - Exponential  ");
+        System.out.format("  T - Trigonometry  ");
+        System.out.format("  L - Logarithmic  ");
+        System.out.format("  S - Special  ");
+        System.out.format("  Q - Quit\n");
+        System.out.format("|________________________________________________________________________________________________________________________|\n");
+
 
     }
 

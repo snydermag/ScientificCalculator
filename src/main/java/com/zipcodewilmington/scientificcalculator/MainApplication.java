@@ -17,7 +17,7 @@ public class MainApplication {
             printTopMenu(currVal, isRadians);
             printMainMenu();
 
-            String menuSelection = Console.getStringInput("  Press Key to select Menu option");
+            String menuSelection = Console.getStringInput("\uD835\uDE17\uD835\uDE33\uD835\uDE26\uD835\uDE34\uD835\uDE34 \uD835\uDE12\uD835\uDE26\uD835\uDE3A \uD835\uDE35\uD835\uDE30 \uD835\uDE34\uD835\uDE26\uD835\uDE2D\uD835\uDE26\uD835\uDE24\uD835\uDE35 \uD835\uDE14\uD835\uDE26\uD835\uDE2F\uD835\uDE36 \uD835\uDE30\uD835\uDE31\uD835\uDE35\uD835\uDE2A\uD835\uDE30\uD835\uDE2F");
 
             switch (menuSelection) {
 
@@ -34,7 +34,7 @@ public class MainApplication {
                 // User selects Memory - Will take User to Memory Menu
                 case "M":
                     // Print Calculator Menu
-                    printTopMenu(currVal, isRadians);
+                    printTopMenu(currVal,isRadians);
                     Function.printMemoryMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option");
                     switch (menuSelection){
@@ -314,28 +314,30 @@ public class MainApplication {
 
     public static void printTopMenu(Double currVal, boolean isRadians) {
 
-        System.out.format("|________________________Calculator________________________|\n");
+        System.out.format("✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖✧\n");
+
+        System.out.format("|                         \uD835\uDDD6\uD835\uDDEE\uD835\uDDF9\uD835\uDDF0\uD835\uDE02\uD835\uDDF9\uD835\uDDEE\uD835\uDE01\uD835\uDDFC\uD835\uDDFF                          |\n");
         if (isRadians == true) {
             System.out.format("%s %52f %s\n","| Rad", currVal,"|");
         }
         else {
             System.out.format("%s %56f %s\n", "|", currVal, "|");
         }
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
     }
 
     public static void printMainMenu() {
         System.out.format("|  %s    |    %s   |    %s  |\n","[C] - Clear", "[I] - +/-", "[M] - Memory Menu");
-        System.out.format("|__________________________________________________________|\n");
-        System.out.format("|                         Main Menu                        |\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
+        System.out.format("|                          \uD835\uDDE0\uD835\uDDF2\uD835\uDDFB\uD835\uDE02                            |\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
         System.out.format("%s %s %42s", "|","[A] - Arithmetic","|\n");
         System.out.format("%s %s %41s", "|", "[E] - Exponential", "|\n");
         System.out.format("%s %s %40s", "|", "[T] - Trigonometry", "|\n");
         System.out.format("%s %s %41s", "|","[L] - Logarithmic", "|\n");
         System.out.format("%s %s %45s", "|", "[S] - Special", "|\n");
         System.out.format("%s %s %48s", "|", "[Q] - Quit", "|\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
 
     }
 }

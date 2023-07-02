@@ -153,8 +153,8 @@ public class TestFunction {
 
     @Test
     public void  testRadToDeg () {
-        double actual = Function.radtoDeg(2.5);
-        double expected = 0;
+        double actual = Function.radToDeg(2.5);
+        double expected = 143.2394487827058;
         Assert.assertEquals(actual,expected,0.0001);
     }
 }

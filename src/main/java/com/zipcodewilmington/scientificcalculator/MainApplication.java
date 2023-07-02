@@ -254,7 +254,7 @@ public class MainApplication {
 
         System.out.format("|________________________Calculator________________________|\n");
         if (isRadians = true) {
-            System.out.format("%s %f\n","Rad", currVal);
+            System.out.format("%s %f\n","Rad ", currVal);
         }
         else {
             System.out.format("%f\n",currVal);

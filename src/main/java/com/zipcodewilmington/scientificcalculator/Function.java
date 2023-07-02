@@ -2,7 +2,7 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class Function {
 
-//Arithmetic Functions
+    // Arithmetic Functions
     public static double getSum (double inputA , double inputB) {
         double result = 0;
 
@@ -36,7 +36,7 @@ public class Function {
         return  result;
     }
 
-//    Exponential Functions
+    // Exponential Functions
 
     public static double getSquareRoot(double inputA) {
         double result;
@@ -73,7 +73,7 @@ public class Function {
         return result;
     }
 
-//    Trigonometry Functions
+    // Trigonometry Functions
 
     public static double getSine(double inputA) {
         double result;
@@ -161,22 +161,8 @@ public class Function {
         return result;
     }
 
-    // Memory Functions
-    public static double addMemory(double memoryStored) {
-        double storedVal = memoryStored;
-        return storedVal;
 
-    }
-    public static double clearMemory() {
-        return 0;
-    }
-
-
-    public static double recallMemory(double memoryStored) {
-        double storedVal = memoryStored;
-        return storedVal;
-    }
-//    Radians/Degrees functions
+    // Radians/Degrees Functions
     public static double degToRad (double inputA) {
         double result = inputA * (Math.PI/180);
         return result;
@@ -188,75 +174,73 @@ public class Function {
     }
 
     //Print Memory Menu Buttons
-
     public static void printMemoryMenu(){
         System.out.format("|                       Memory Menu                        |\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
         System.out.format("A - M+\n" );
         System.out.format("B - MC\n" );
         System.out.format("C - MRC\n" );
         System.out.format("Q - Previous Menu\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
     }
 
     public static void printArithmeticMenu() {
         System.out.format("|                     Arithmetic Menu                      |\n");
-        System.out.format("|__________________________________________________________|\n");
-        System.out.format("A - Addition\n" );
-        System.out.format("B - Subtraction\n");
-        System.out.format("C - Multiplication\n");
-        System.out.format("D - Division\n");
-        System.out.format("Q - Previous Menu\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
+        System.out.format("%s %s %44s", "|","[A] - Addition","|\n"      );
+        System.out.format("%s %s %41s", "|","[B] - Subtraction","|\n");
+        System.out.format("%s %s %38s", "|","[C] - Multiplication","|\n");
+        System.out.format("%s %s %44s", "|","[D] - Division","|\n");
+        System.out.format("%s %s %39s", "|","[Q] - Previous Menu","|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
     }
 
     public static void  printExponentialMenu() {
         System.out.format("|                     Exponential Menu                     |\n");
-        System.out.format("|__________________________________________________________|\n");
-        System.out.format("A - Square Root\n");
-        System.out.format("B - Square\n");
-        System.out.format("C - Exponent\n");
-        System.out.format("D - Inverse\n");
-        System.out.format("Q - Previous Menu\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
+        System.out.format("%s %s %41s", "|","[A] - Square Root","|\n");
+        System.out.format("%s %s %46s", "|","[B] - Square","|\n");
+        System.out.format("%s %s %44s", "|","[C] - Exponent","|\n");
+        System.out.format("%s %s %45s", "|","[D] - Inverse","|\n");
+        System.out.format("%s %s %39s", "|","[Q] - Previous Menu","|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
     }
 
 
     public static void printTrigonometryMenu() {
 
         System.out.format("|                     Trigonometry Menu                    |\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
         System.out.format("A - Sine \n");
         System.out.format("B - Cosine\n");
         System.out.format("C - Tangent\n");
         System.out.format("D - Inverse Sine\n");
         System.out.format("E - Inverse Cosine\n");
         System.out.format("F - Inverse Tangent\n");
-        System.out.format("G - Degrees to Radians \n");
-        System.out.format("H - Radians to Degrees\n");
+        System.out.format("R - Degrees/Radians\n");
         System.out.format("Q - Previous Menu\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
     }
 
     public static void printLogarithmicMenu() {
         System.out.format("|                     Logarithmic Menu                     |\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
         System.out.format("A - Log\n");
         System.out.format("B - LN\n");
         System.out.format("C - Log10\n");
         System.out.format("D - e\n");
         System.out.format("Q - Previous Menu\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
     }
 
     public static void printSpecialFunctionsMenu() {
         System.out.format("|                  Special Functions Menu                  |\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
         System.out.format("A - Absolute Value\n");
         System.out.format("B - Pythagorean Theorem\n");
         System.out.format("C - Factorial\n");
         System.out.format("Q - Previous Menu\n");
-        System.out.format("|__________________________________________________________|\n");
+        System.out.format("|✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧˖°✧|\n");
     }
 
 

@@ -101,6 +101,14 @@ public class TestFunction {
         Assert.assertEquals(actual,expected,0.001);
     }
 
+
+    @Test
+    public void testGetLog() {
+        double actual = Function.getLog(7.5,5.5);
+        double expected = 1.1819359292530953;
+        Assert.assertEquals(actual,expected,0.001);
+    }
+
     @Test
     public void testLN() {
         double actual = Function.getLN(22.5);

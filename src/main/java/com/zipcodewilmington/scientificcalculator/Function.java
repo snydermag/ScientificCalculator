@@ -205,6 +205,8 @@ public class Function {
         System.out.format("B - Subtraction\n");
         System.out.format("C - Multiplication\n");
         System.out.format("D - Division\n");
+        System.out.format("Q - Previous Menu\n");
+        System.out.format("|__________________________________________________________|\n");
     }
 
     public static void  printExponentialMenu() {
@@ -214,6 +216,8 @@ public class Function {
         System.out.format("B - Square\n");
         System.out.format("C - Exponent\n");
         System.out.format("D - Inverse\n");
+        System.out.format("Q - Previous Menu\n");
+        System.out.format("|__________________________________________________________|\n");
     }
 
 
@@ -229,6 +233,8 @@ public class Function {
         System.out.format("F - Inverse Tangent\n");
         System.out.format("G - Degrees to Radians \n");
         System.out.format("H - Radians to Degrees\n");
+        System.out.format("Q - Previous Menu\n");
+        System.out.format("|__________________________________________________________|\n");
     }
 
     public static void printLogarithmicMenu() {
@@ -238,6 +244,8 @@ public class Function {
         System.out.format("B - LN\n");
         System.out.format("C - Log10\n");
         System.out.format("D - e\n");
+        System.out.format("Q - Previous Menu\n");
+        System.out.format("|__________________________________________________________|\n");
     }
 
     public static void printSpecialFunctionsMenu() {
@@ -246,6 +254,8 @@ public class Function {
         System.out.format("A - Absolute Value\n");
         System.out.format("B - Pythagorean Theorem\n");
         System.out.format("C - Factorial\n");
+        System.out.format("Q - Previous Menu\n");
+        System.out.format("|__________________________________________________________|\n");
     }
 
 

@@ -196,6 +196,8 @@ public class Function {
     }
 
     public static void printArithmeticMenu() {
+        System.out.format("|                     Arithmetic Menu                      |\n");
+        System.out.format("|__________________________________________________________|\n");
         System.out.format("A - Addition\n" );
         System.out.format("B - Subtraction\n");
         System.out.format("C - Multiplication\n");
@@ -203,6 +205,8 @@ public class Function {
     }
 
     public static void  printExponentialMenu() {
+        System.out.format("|                     Exponential Menu                     |\n");
+        System.out.format("|__________________________________________________________|\n");
         System.out.format("A - Square Root\n");
         System.out.format("B - Square\n");
         System.out.format("C - Exponent\n");
@@ -211,6 +215,9 @@ public class Function {
 
 
     public static void printTrigonometryMenu() {
+
+        System.out.format("|                     Trigonometry Menu                    |\n");
+        System.out.format("|__________________________________________________________|\n");
         System.out.format("A - Sine \n");
         System.out.format("B - Cosine\n");
         System.out.format("C - Tangent\n");
@@ -222,6 +229,8 @@ public class Function {
     }
 
     public static void printLogarithmicMenu() {
+        System.out.format("|                     Logarithmic Menu                     |\n");
+        System.out.format("|__________________________________________________________|\n");
         System.out.format("A - Log\n");
         System.out.format("B - LN\n");
         System.out.format("C - Log10\n");
@@ -229,6 +238,8 @@ public class Function {
     }
 
     public static void printSpecialFunctionsMenu() {
+        System.out.format("|                  Special Functions Menu                  |\n");
+        System.out.format("|__________________________________________________________|\n");
         System.out.format("A - Absolute Value\n");
         System.out.format("B - Pythagorean Theorem\n");
         System.out.format("C - Factorial\n");

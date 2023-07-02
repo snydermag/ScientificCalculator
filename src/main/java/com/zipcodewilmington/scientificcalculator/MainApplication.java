@@ -232,7 +232,7 @@ public class MainApplication {
         System.out.format("|________________________Calculator________________________|\n");
         System.out.format("%f\n", currVal);
         System.out.format("|__________________________________________________________|\n");
-        System.out.format("%s      |      %s      |      %s","  [C] - Clear", "[I] - +/-", "[M] - M+\n");
+        System.out.format("|  %s    |    %s   |    %s  |\n","[C] - Clear", "[I] - +/-", "[M] - Memory Menu");
         System.out.format("|__________________________________________________________|\n");
 
     }

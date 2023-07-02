@@ -7,6 +7,7 @@ public class MainApplication {
     public static void main(String[] args) {
         boolean inMenu = true;
         double currVal = 0;
+        boolean isRadians = false;
         double storedVal = 0;
         double inputA;
         double inputB;
@@ -187,6 +188,9 @@ public class MainApplication {
 
                         // User selects Log
                         case "A":
+                            inputA = Console.getDoubleInput("Input a number:");
+                            inputB = Console.getDoubleInput("Input a number: ");
+                            currVal = Function.getLog(inputA, inputB);
                             break;
                         // User selects Natural Log
                         case "B":

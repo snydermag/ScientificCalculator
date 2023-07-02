@@ -13,17 +13,9 @@ public class MainApplication {
         double inputB;
 
 
-//        Console.println("Welcome to my calculator!");
-//        String s = Console.getStringInput("Enter a string");
-//        Integer i = Console.getIntegerInput("Enter an integer");
-//        Double d = Console.getDoubleInput("Enter a double.");
-//
-//        Console.println("The user input %s as a string", s);
-//        Console.println("The user input %s as an integer", i);
-//        Console.println("The user input %s as a d", d);
 
         while (inMenu) {
-            printTopMenu(currVal);
+            printTopMenu(currVal, isRadians);
             printMainMenu();
 
             String menuSelection = Console.getStringInput("  Press Key to select Menu option");
@@ -128,6 +120,13 @@ public class MainApplication {
                             inputA = Console.getDoubleInput("Input first number:");
                             currVal = Function.getInverse(inputA);
                             break;
+                        // User selects Quit
+                        case "Q":
+                            break;
+                        // User enters an invalid Menu option - Will prompt the User to enter another selection
+                        default:
+                            System.out.println("Invalid input. Please try again.");
+                            break;
                     }
                     break;
 
@@ -230,6 +229,7 @@ public class MainApplication {
                             inputA = Console.getDoubleInput("Input a number:");
                             currVal = Function.getFactorial((int)inputA);
                             break;
+
                     }
                     break;
 
@@ -252,6 +252,7 @@ public class MainApplication {
 
     public static void printTopMenu(Double currVal) {
         System.out.format("|________________________Calculator________________________|\n");
+
         System.out.format("%f\n",currVal);
         System.out.format("|__________________________________________________________|\n");
     }

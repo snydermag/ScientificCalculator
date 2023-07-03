@@ -3,7 +3,7 @@ package com.zipcodewilmington.scientificcalculator;
 import java.util.Locale;
 
 /**
- * Created by leon on 2/9/18.
+ * Scientific Calculator by Dmytro Romaniv, Maggie Snyder, & Anudeep Chennuri
  */
 public class MainApplication {
     public static void main(String[] args) {

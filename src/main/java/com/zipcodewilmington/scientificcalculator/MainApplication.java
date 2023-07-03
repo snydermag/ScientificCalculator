@@ -390,12 +390,23 @@ public class MainApplication {
                                 System.out.println("Invalid Input. Returning to Main Menu.");
                                 break;
                             }
+                            if (inputA <= 0) {
+                                System.out.println("You cannot have a Triangle side with less than One. Returning to Main Menu.");
+                                break;
+                            }
+
                             try {
                                 inputB = Console.getDoubleInput("Input second number:");
                             } catch (Exception e) {
                                 System.out.println("Invalid Input. Returning to Main Menu.");
                                 break;
                             }
+
+                            if (inputB <= 0) {
+                                System.out.println("You cannot have a Triangle side with less than One. Returning to Main Menu.");
+                                break;
+                            }
+
                             currVal = Function.getPythagoreanTheorem(inputA, inputB);
                             break;
 //                        User Selects Factorial

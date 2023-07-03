@@ -83,21 +83,21 @@ public class TestFunction {
     @Test
     public void testGetInverseSine () {
         double actual = Function.getInverseSine(-0.55);
-        double expected = 1.1729867870360222;
+        double expected = -0.5823642378687435;
         Assert.assertEquals(actual,expected,0.001);
     }
 
     @Test
     public void testGetInverseCosine () {
         double actual = Function.getInverseCosine(-0.25);
-        double expected = 1.0320850239843857;
+        double expected = 1.8234765819369754;
         Assert.assertEquals(actual,expected,0.001);
     }
 
     @Test
     public void testInverseTan () {
         double actual = Function.getInverseTan(-0.75);
-        double expected = -1.0734261485493772;
+        double expected = -0.6435011087932844;
         Assert.assertEquals(actual,expected,0.001);
     }
 

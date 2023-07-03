@@ -1,5 +1,7 @@
 package com.zipcodewilmington.scientificcalculator;
 
+import java.util.Locale;
+
 /**
  * Created by leon on 2/9/18.
  */
@@ -18,6 +20,7 @@ public class MainApplication {
             printMainMenu();
 
             String menuSelection = Console.getStringInput("\uD835\uDE17\uD835\uDE33\uD835\uDE26\uD835\uDE34\uD835\uDE34 \uD835\uDE12\uD835\uDE26\uD835\uDE3A \uD835\uDE35\uD835\uDE30 \uD835\uDE34\uD835\uDE26\uD835\uDE2D\uD835\uDE26\uD835\uDE24\uD835\uDE35 \uD835\uDE14\uD835\uDE26\uD835\uDE2F\uD835\uDE36 \uD835\uDE30\uD835\uDE31\uD835\uDE35\uD835\uDE2A\uD835\uDE30\uD835\uDE2F:");
+            menuSelection = menuSelection.toUpperCase();
 
             switch (menuSelection) {
 
@@ -67,6 +70,7 @@ public class MainApplication {
                     printTopMenu(currVal, isRadians);
                     Function.printArithmeticMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = menuSelection.toUpperCase();
                     switch (menuSelection) {
 
                         // User selects Addition - Will add two numbers to be inputted by User
@@ -155,6 +159,7 @@ public class MainApplication {
                     printTopMenu(currVal, isRadians);
                     Function.printExponentialMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = menuSelection.toUpperCase();
                     switch (menuSelection) {
 
                         // User selects Square Root - Will find the square root of number to be inputted by User
@@ -221,6 +226,7 @@ public class MainApplication {
                     printTopMenu(currVal, isRadians);
                     Function.printTrigonometryMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = menuSelection.toUpperCase();
                     switch (menuSelection){
 
                         // User selects Sine - Will find Sine of number inputted by User
@@ -312,6 +318,7 @@ public class MainApplication {
                     printTopMenu(currVal, isRadians);
                     Function.printLogarithmicMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = menuSelection.toUpperCase();
                     switch (menuSelection) {
 
                         // User selects Log
@@ -370,6 +377,7 @@ public class MainApplication {
                     printTopMenu(currVal, isRadians);
                     Function.printSpecialFunctionsMenu();
                     menuSelection = Console.getStringInput("Press Key to select Menu option:");
+                    menuSelection = menuSelection.toUpperCase();
                     switch (menuSelection) {
 
                         // User selects Absolute Value - Will return the Absolute Value of number inputted by User

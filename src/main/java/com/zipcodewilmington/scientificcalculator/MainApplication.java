@@ -41,7 +41,7 @@ public class MainApplication {
 
                         // User selects M+ - Will store the current value displayed to memory
                         case "A":
-                            currVal = storedVal;
+                            storedVal = currVal;
                             break;
                         // User selects MC - Will set the stored value to Zero
                         case "B":
@@ -49,7 +49,7 @@ public class MainApplication {
                             break;
                         // User selects MRC - Will set the current value to be the stored value
                         case "C":
-                            storedVal = currVal;
+                            currVal = storedVal;
                             break;
                         // User selects Quit - Will return User to Main Menu
                         case "Q":
@@ -132,10 +132,9 @@ public class MainApplication {
                                 break;
                             }
 
-                            // Loop to prevent division by zero
-                            while (inputB == 0){
-                                System.out.println("ERROR: Cannot divide by Zero.");
-                                inputB = Console.getDoubleInput("Input second number:");
+                            if (inputA == 0) {
+                                System.out.println("You cannot divide by Zero. Returning to Main Menu.");
+                                break;
                             }
 
                             currVal = Function.getDivide(inputA, inputB);
@@ -164,6 +163,11 @@ public class MainApplication {
                                 inputA = Console.getDoubleInput("Input number:");
                             } catch (Exception e) {
                                 System.out.println("Invalid Input. Returning to Main Menu.");
+                                break;
+                            }
+
+                            if (inputA < 0) {
+                                System.out.println("You cannot get the square root of a negative number. Returning to Main Menu.");
                                 break;
                             }
                             currVal = Function.getSquareRoot(inputA);
@@ -386,12 +390,23 @@ public class MainApplication {
                                 System.out.println("Invalid Input. Returning to Main Menu.");
                                 break;
                             }
+                            if (inputA <= 0) {
+                                System.out.println("You cannot have a Triangle side with less than One. Returning to Main Menu.");
+                                break;
+                            }
+
                             try {
                                 inputB = Console.getDoubleInput("Input second number:");
                             } catch (Exception e) {
                                 System.out.println("Invalid Input. Returning to Main Menu.");
                                 break;
                             }
+
+                            if (inputB <= 0) {
+                                System.out.println("You cannot have a Triangle side with less than One. Returning to Main Menu.");
+                                break;
+                            }
+
                             currVal = Function.getPythagoreanTheorem(inputA, inputB);
                             break;
 //                        User Selects Factorial

@@ -136,7 +136,7 @@ public class MainApplication {
                                 break;
                             }
 
-                            if (inputA == 0) {
+                            if (inputB == 0) {
                                 System.out.println("You cannot divide by Zero. Returning to Main Menu.");
                                 break;
                             }
